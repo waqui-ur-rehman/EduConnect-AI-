@@ -1,0 +1,61 @@
+.edc-workspace-brand {
+  display: flex;
+  height: 34px;
+  min-width: 0;
+  align-items: center;
+  gap: 10px;
+  padding: 0 5px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.auth-topbar .edc-workspace-brand {
+  height: 34px;
+  padding: 0 5px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.edc-workspace-brand-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 0;
+  color: #ffcf3d;
+  background: transparent;
+}
+
+.edc-workspace-brand-icon svg {
+  width: 34px;
+  height: 34px;
+}
+
+.edc-workspace-brand-copy {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+}
+
+.edc-workspace-brand-copy strong {
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edc-workspace-brand-copy strong b {
+  color: #ffcf3d;
+}
+
+@media (max-width: 1400px) and (min-width: 901px) {
+  .edc-workspace-brand-copy strong {
+    font-size: 18px;
+  }
+}

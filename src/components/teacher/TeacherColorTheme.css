@@ -1,0 +1,463 @@
+.teacher-fullscreen-page .edc-teacher-shell {
+  --teacher-purple: var(--edc-primary);
+  --teacher-deep: var(--edc-primary-deep);
+  --teacher-gold: var(--edc-gold);
+  --teacher-ink: var(--edc-ink);
+  --teacher-muted: var(--edc-muted);
+  --teacher-line: var(--edc-line);
+  --student-button-light: var(--edc-gold-light);
+  --student-button-ink: var(--edc-gold-ink);
+  --student-button-gradient: var(--edc-gold-gradient);
+  --student-progress-color: var(--edc-student-progress-color);
+  --student-progress-track: var(--edc-student-progress-track);
+  --student-circle-color: var(--edc-student-circle-color);
+  --student-circle-light: var(--edc-student-circle-light);
+  --student-circle-track: var(--edc-student-circle-track);
+  background: var(--edc-section-bg);
+  color: var(--edc-ink);
+}
+
+.teacher-fullscreen-page .edc-to-workspace-header {
+  border-bottom: 1px solid var(--edc-topbar-border);
+  background: var(--edc-topbar-background);
+}
+
+/* Keep the shared Teacher navigation identical to the dark workspace sidebar. */
+.edc-teacher-shell .edc-workspace-sidebar,
+.teacher-fullscreen-page .edc-workspace-sidebar {
+  background: #251941 !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-menu,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu {
+  background: transparent !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-menu a,
+.edc-teacher-shell .edc-workspace-sidebar-menu button,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu a,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu button {
+  background: transparent !important;
+  color: #f3eafb !important;
+  font-size: 13.5px !important;
+  font-weight: 500 !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-menu svg,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu svg {
+  width: 18px !important;
+  height: 18px !important;
+  color: #dcc6f1 !important;
+  fill: none !important;
+  stroke: #dcc6f1 !important;
+  stroke-width: 2 !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-menu a:hover,
+.edc-teacher-shell .edc-workspace-sidebar-menu button:hover,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu a:hover,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu button:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-menu a.is-active,
+.edc-teacher-shell .edc-workspace-sidebar-menu button.is-active,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu a.is-active,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu button.is-active {
+  background: var(--edc-sidebar-active-bg) !important;
+  color: var(--edc-sidebar-active-text) !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-menu a.is-active svg,
+.edc-teacher-shell .edc-workspace-sidebar-menu button.is-active svg,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu a.is-active svg,
+.teacher-fullscreen-page .edc-workspace-sidebar-menu button.is-active svg {
+  color: var(--edc-sidebar-active-text) !important;
+  stroke: currentColor !important;
+}
+
+/* Protect the shared profile and footer cards from broad Teacher card selectors. */
+.edc-teacher-shell .edc-workspace-sidebar-profile,
+.teacher-fullscreen-page .edc-workspace-sidebar-profile {
+  border-color: rgba(255, 255, 255, 0.12) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.edc-teacher-shell .edc-workspace-sidebar-footer-card,
+.teacher-fullscreen-page .edc-workspace-sidebar-footer-card {
+  border-color: var(--edc-sidebar-widget-border) !important;
+  background: var(--edc-sidebar-widget-bg) !important;
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-to-panel,
+  .edc-tc-table-panel,
+  .edc-tl-panel,
+  .edc-ms-panel,
+  .edc-teacher-earnings-panel
+) {
+  border-color: var(--edc-card-border);
+  background: var(--edc-card-bg);
+  box-shadow: var(--edc-card-shadow);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  [class*="-panel"],
+  [class*="-card"]:not([class*="stat"]):not([class*="status"]):not([class*="notice"]),
+  [class*="table-wrap"],
+  [class*="-dropdown"]
+):not(svg) {
+  border-color: var(--edc-card-border);
+  background-color: var(--edc-card-bg);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-header h1,
+  .edc-ms-header h1,
+  .edc-teacher-earnings-header h1,
+  .edc-teacher-earnings-panel-heading h2,
+  .edc-to-panel-heading h2,
+  .edc-tc-heading h1
+) {
+  color: var(--edc-ink);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-header p,
+  .edc-ms-header p,
+  .edc-teacher-earnings-header p,
+  .edc-teacher-earnings-panel-heading p
+) {
+  color: var(--edc-label-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-to-panel,
+  .edc-tc-table-panel,
+  .edc-tl-panel,
+  .edc-ms-panel,
+  .edc-teacher-earnings-panel
+) :is(table th, table td) {
+  border-color: var(--edc-table-border);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-to-panel,
+  .edc-tc-table-panel,
+  .edc-tl-panel,
+  .edc-ms-panel,
+  .edc-teacher-earnings-panel
+) table th {
+  background: var(--edc-table-header-bg);
+  color: var(--edc-table-header-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-to-course-table,
+  .edc-tc-table,
+  .edc-tl-table,
+  .edc-ms-table,
+  .edc-teacher-earnings-table
+) tbody tr:hover {
+  background: var(--edc-table-row-hover);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea
+) {
+  border-color: var(--edc-input-border);
+  background-color: var(--edc-input-bg);
+  color: var(--edc-input-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea
+)::placeholder {
+  color: var(--edc-input-placeholder);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  [class*="search"],
+  [class*="filter"],
+  [class*="toolbar"]
+) {
+  border-color: var(--edc-line);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tc-search,
+  .edc-tl-search,
+  .edc-ms-search,
+  [class*="search-results"],
+  [class*="dropdown"],
+  [class*="-menu"]:not(.edc-to-notification-menu)
+) {
+  background-color: var(--edc-white);
+  color: var(--edc-ink);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  input,
+  select,
+  textarea,
+  button,
+  a
+):focus-visible {
+  outline: 3px solid var(--edc-btn-focus-ring);
+  outline-offset: 3px;
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  button[class*="primary"],
+  a[class*="primary"],
+  button[class*="-add"],
+  button[class*="-create"],
+  button[class*="-export"],
+  button[class*="-submit"],
+  button[class*="-save"],
+  .edc-tl-add,
+  .edc-ms-export,
+  .edc-teacher-earnings-download,
+  .edc-to-gold-button,
+  .edc-tl-empty button,
+  .edc-teacher-payout-panel > button
+) {
+  border-color: var(--edc-btn-primary-border);
+  background: var(--edc-btn-primary-bg);
+  color: var(--edc-btn-primary-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  button[class*="primary"],
+  a[class*="primary"],
+  button[class*="-add"],
+  button[class*="-create"],
+  button[class*="-export"],
+  button[class*="-submit"],
+  button[class*="-save"],
+  .edc-tl-add,
+  .edc-ms-export,
+  .edc-teacher-earnings-download,
+  .edc-to-gold-button,
+  .edc-tl-empty button,
+  .edc-teacher-payout-panel > button
+):hover:not(:disabled):not([aria-disabled="true"]) {
+  background: var(--edc-btn-primary-hover-bg);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  button[class*="primary"],
+  a[class*="primary"],
+  button[class*="-add"],
+  button[class*="-create"],
+  button[class*="-export"],
+  button[class*="-submit"],
+  button[class*="-save"]
+):disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is([class*="-tabs"], [role="tablist"])
+  :is(button.active, button.is-active, [aria-selected="true"], [aria-current="page"]) {
+  border-color: var(--edc-btn-primary-border);
+  background: var(--edc-btn-primary-bg);
+  color: var(--edc-btn-primary-text);
+  box-shadow: var(--edc-shadow-xs);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat.purple,
+  .edc-ms-stat.purple,
+  .edc-teacher-earnings-stat.purple,
+  .edc-to-stat.violet,
+  .edc-to-stat:not(.gold)
+) {
+  border-color: var(--edc-teacher-stat-purple-border);
+  background: var(--edc-teacher-stat-purple-bg);
+  color: var(--edc-teacher-stat-purple-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat.gold,
+  .edc-ms-stat.gold,
+  .edc-teacher-earnings-stat.gold,
+  .edc-to-stat.amber,
+  .edc-to-stat.gold
+) {
+  border-color: var(--edc-teacher-stat-gold-border);
+  background: var(--edc-teacher-stat-gold-bg);
+  color: var(--edc-teacher-stat-gold-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat.green,
+  .edc-ms-stat.green,
+  .edc-teacher-earnings-stat.green,
+  .edc-to-stat.green
+) {
+  border-color: var(--edc-teacher-stat-green-border);
+  background: var(--edc-teacher-stat-green-bg);
+  color: var(--edc-teacher-stat-green-text);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat.purple,
+  .edc-ms-stat.purple,
+  .edc-teacher-earnings-stat.purple,
+  .edc-to-stat.violet,
+  .edc-to-stat:not(.gold),
+  .edc-tl-stat.gold,
+  .edc-ms-stat.gold,
+  .edc-teacher-earnings-stat.gold,
+  .edc-to-stat.amber,
+  .edc-to-stat.gold,
+  .edc-tl-stat.green,
+  .edc-ms-stat.green,
+  .edc-teacher-earnings-stat.green,
+  .edc-to-stat.green
+) :is(small, strong) {
+  color: var(--edc-ink);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat-icon,
+  .edc-ms-stat > span:first-child,
+  .edc-teacher-earnings-stat > span,
+  .edc-to-stat-icon
+) {
+  background: var(--edc-teacher-stat-purple-icon-bg);
+  color: var(--edc-primary-deep);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat.gold .edc-tl-stat-icon,
+  .edc-ms-stat.gold > span:first-child,
+  .edc-teacher-earnings-stat.gold > span,
+  .edc-to-stat.amber .edc-to-stat-icon,
+  .edc-to-stat.gold .edc-to-stat-icon
+) {
+  background: var(--edc-teacher-stat-gold-icon-bg);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-stat.green .edc-tl-stat-icon,
+  .edc-ms-stat.green > span:first-child,
+  .edc-teacher-earnings-stat.green > span,
+  .edc-to-stat.green .edc-to-stat-icon
+) {
+  background: var(--edc-teacher-stat-green-icon-bg);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-progress-line > span,
+  .edc-ms-progress > span
+) {
+  background: var(--student-progress-track);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-tl-progress-line > span > span,
+  .edc-ms-progress > span > span
+) {
+  background: var(--student-progress-color);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell .edc-to-donut {
+  background: conic-gradient(
+    var(--student-circle-color) 0 var(--completed-stop),
+    var(--student-circle-light) var(--completed-stop) var(--active-stop),
+    var(--student-circle-track) var(--active-stop) 100%
+  );
+}
+
+.teacher-fullscreen-page .edc-teacher-shell .edc-to-progress-key i {
+  background: var(--student-circle-color);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell .edc-to-progress-key i.progress {
+  background: var(--student-circle-light);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell .edc-to-progress-key i.remaining {
+  background: var(--student-circle-track);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell :is(
+  .edc-teacher-earnings-line,
+  .edc-teacher-earnings-dot
+) {
+  stroke: var(--edc-gold);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell .edc-teacher-earnings-dot {
+  fill: var(--edc-gold);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell .edc-teacher-earnings-modal {
+  border: 1px solid var(--edc-line);
+  background: var(--edc-white);
+}
+
+.teacher-fullscreen-page .edc-teacher-shell {
+  display: block;
+  position: relative;
+}
+
+.teacher-fullscreen-page .edc-teacher-shell > .edc-teacher-main {
+  width: calc(100% - var(--edc-sidebar-width));
+  margin-left: var(--edc-sidebar-width);
+  transition: width 200ms ease, margin-left 200ms ease;
+}
+
+.teacher-fullscreen-page .edc-teacher-shell:has(> .edc-workspace-sidebar.is-collapsed) > .edc-teacher-main {
+  width: calc(100% - var(--edc-sidebar-width-icon));
+  margin-left: var(--edc-sidebar-width-icon);
+}
+
+.teacher-fullscreen-page .edc-to-workspace-header {
+  justify-content: space-between;
+}
+
+.teacher-fullscreen-page .edc-to-notification-menu {
+  margin-left: auto;
+}
+
+.edc-teacher-sidebar-promo {
+  justify-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .teacher-fullscreen-page .edc-teacher-shell > .edc-teacher-main {
+    width: calc(100% - var(--edc-sidebar-width));
+    margin-left: var(--edc-sidebar-width);
+  }
+
+  .teacher-fullscreen-page .edc-teacher-shell:has(> .edc-workspace-sidebar.is-collapsed) > .edc-teacher-main {
+    width: calc(100% - var(--edc-sidebar-width-icon));
+    margin-left: var(--edc-sidebar-width-icon);
+  }
+
+  .teacher-fullscreen-page .edc-to-workspace-header {
+    height: var(--edc-navbar-height);
+    min-height: var(--edc-navbar-height);
+  }
+}
+
+@media (max-width: 767px) {
+  .teacher-fullscreen-page .edc-teacher-shell > .edc-teacher-main,
+  .teacher-fullscreen-page .edc-teacher-shell:has(> .edc-workspace-sidebar.is-collapsed) > .edc-teacher-main {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .teacher-fullscreen-page .edc-to-workspace-header {
+    height: var(--edc-navbar-height-mobile);
+    min-height: var(--edc-navbar-height-mobile);
+  }
+}

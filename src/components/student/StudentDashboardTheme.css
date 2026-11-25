@@ -1,0 +1,421 @@
+.dashboard-page:has(.edc-student-topbar) { padding-top: var(--edc-navbar-height); background: var(--edc-section-bg); }
+.dashboard-page:has(.edc-student-shell) .auth-topbar.edc-student-topbar { position: fixed; top: 0; right: 0; left: var(--edc-sidebar-current-width, var(--edc-sidebar-width)); transition: left 200ms ease; z-index: 1000; display: flex; align-items: center; gap: 25px; width: auto; max-width: none; height: var(--edc-navbar-height); min-height: var(--edc-navbar-height); padding: 0 23px; border-bottom: 1px solid var(--edc-topbar-border); background: var(--edc-topbar-background); box-shadow: var(--edc-topbar-shadow); backdrop-filter: none; }
+.edc-student-topbar-actions { display: flex; align-items: center; gap: 18px; margin-left: auto; }
+.edc-student-topbar-actions .edc-student-verification {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 8px 12px;
+  border: 1px solid #eec651;
+  border-radius: 10px;
+  background: #eec651;
+  color: #211638;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.edc-student-topbar-actions .edc-student-verification:hover { background: #f7d66c; }
+.edc-student-topbar-actions .edc-student-verification.is-verified { border-color: #bee7d5; background: #ecf9f2; color: #18764e; }
+.edc-student-topbar-actions .edc-student-verification:focus-visible { outline: 3px solid #c9a5e8; outline-offset: 3px; }
+.edc-topbar-notifications { position: relative; }
+.edc-topbar-bell { position: relative; display: grid; width: 30px; height: 35px; place-items: center; padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--edc-topbar-icon); cursor: pointer; }
+.edc-student-topbar .edc-workspace-sidebar-trigger svg { display: block !important; width: 20px !important; height: 20px !important; color: #fff !important; fill: none !important; stroke: #fff !important; stroke-width: 2 !important; }
+.edc-topbar-bell:hover,.edc-topbar-bell[aria-expanded="true"] { background: var(--edc-topbar-hover-bg); color: var(--edc-topbar-icon-hover); }
+.edc-topbar-bell > span { position: absolute; top: 3px; right: 4px; width: 8px; height: 8px; border: 1px solid var(--edc-white); border-radius: 50%; background: var(--edc-error); }
+.edc-topbar-notification-panel { position: absolute; z-index: 1001; top: calc(100% + 10px); right: 0; display: flex; width: min(360px, calc(100vw - 24px)); max-height: min(460px, calc(100dvh - 76px)); flex-direction: column; overflow: hidden; border: 1px solid var(--edc-notification-panel-border); border-radius: 12px; background: var(--edc-notification-panel-bg); box-shadow: var(--edc-shadow-lg); color: var(--edc-ink); }
+.edc-topbar-notification-panel > header { display: flex; align-items: center; justify-content: space-between; padding: 13px 15px; border-bottom: 1px solid var(--edc-primary-light); background: var(--edc-primary-lightest); }
+.edc-topbar-notification-panel > header > div { display: grid; gap: 3px; }
+.edc-topbar-notification-panel > header strong { font-size: 13px; }
+.edc-topbar-notification-panel > header small { color: var(--edc-muted); font-size: 10px; }
+.edc-topbar-notification-panel ul { display: grid; max-height: 340px; margin: 0; padding: 0; overflow-y: auto; list-style: none; }
+.edc-topbar-notification-panel li { display: flex; gap: 9px; padding: 11px 14px; border-bottom: 1px solid var(--edc-primary-light); }
+.edc-topbar-notification-panel li.is-unread { background: var(--edc-notification-unread-bg); }
+.edc-topbar-notification-dot { width: 7px; height: 7px; flex: 0 0 7px; margin-top: 5px; border-radius: 50%; background: transparent; }
+.edc-topbar-notification-panel li.is-unread .edc-topbar-notification-dot { background: var(--edc-notification-indicator); }
+.edc-topbar-notification-panel li > div { display: grid; min-width: 0; gap: 3px; }
+.edc-topbar-notification-panel li strong { color: var(--edc-ink); font-size: 10px; }
+.edc-topbar-notification-panel li p { margin: 0; color: var(--edc-muted-soft); font-size: 10px; line-height: 1.4; }
+.edc-topbar-notification-panel li time { color: var(--edc-muted-soft); font-size: 9px; }
+.edc-topbar-notification-empty { margin: 0; padding: 24px 15px; color: var(--edc-muted); font-size: 11px; text-align: center; }
+.edc-topbar-notification-all { display: flex; min-height: 40px; flex: none; align-items: center; justify-content: center; gap: 6px; border: 0; border-top: 1px solid var(--edc-primary-light); background: var(--edc-primary-lightest); color: var(--edc-primary); font: inherit; font-size: 11px; font-weight: 750; cursor: pointer; }
+.edc-topbar-notification-all:hover { background: var(--edc-primary-light); }
+.edc-topbar-account { position: relative; padding-left: 17px; border-left: 1px solid var(--edc-topbar-border); }
+.edc-topbar-profile { display: flex; align-items: center; gap: 9px; padding: 0; border: 0; background: transparent; color: var(--edc-topbar-text); font: inherit; cursor: pointer; }
+.edc-topbar-avatar { display: grid; flex: 0 0 35px; width: 35px; height: 35px; place-items: center; overflow: hidden; border: 2px solid var(--edc-gold); border-radius: 50%; background: var(--edc-primary-light); color: var(--edc-primary-deep); font-size: 12px; font-weight: 750; }
+.edc-topbar-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.edc-topbar-identity { display: grid; gap: 3px; min-width: 68px; max-width: 180px; text-align: left; }
+.edc-topbar-identity strong { overflow: hidden; color: var(--edc-topbar-text); font-size: 11px; font-weight: 750; text-overflow: ellipsis; white-space: nowrap; }
+.edc-topbar-identity small { color: var(--edc-text-muted-on-dark); font-size: 10px; }
+.edc-topbar-profile > svg { margin-left: 10px; }
+.edc-topbar-account-menu { position: absolute; top: calc(100% + 15px); right: 0; display: grid; gap: 3px; width: 165px; padding: 6px; border: 1px solid var(--edc-dropdown-border); border-radius: 11px; background: var(--edc-dropdown-bg); box-shadow: var(--edc-dropdown-shadow); }
+.edc-topbar-account-menu button { display: flex; align-items: center; gap: 8px; padding: 10px; border: 0; border-radius: 7px; background: transparent; color: var(--edc-muted-soft); font: inherit; font-size: 11px; text-align: left; cursor: pointer; }
+.edc-topbar-account-menu button:hover { background: var(--edc-primary-lighter); color: var(--edc-primary); }
+.dashboard-page .edc-student-shell { --edc-primary-dark: var(--edc-primary-deep); --edc-dark: var(--edc-ink); --edc-border: var(--edc-line); --edc-bg: var(--edc-section-bg); --student-button-light: var(--edc-gold-light); --student-button-yellow: var(--edc-gold); --student-button-ink: var(--edc-gold-ink); --student-button-gradient: var(--edc-gold-gradient); --student-button-surface: var(--edc-gold-gradient); --student-button-border: var(--edc-line); --student-progress-color: var(--edc-student-progress-color); --student-progress-track: var(--edc-student-progress-track); --student-circle-color: var(--edc-student-circle-color); --student-circle-light: var(--edc-student-circle-light); --student-circle-track: var(--edc-student-circle-track); min-height: calc(100dvh - var(--edc-navbar-height)); background: radial-gradient(ellipse at 75% 0%, var(--edc-student-shell-glow), transparent 60%), var(--edc-section-bg); color: var(--edc-ink); }
+.dashboard-page .edc-student-shell > .edc-main { padding: 18px 23px 25px; }
+.dashboard-page .edc-student-shell .edc-main-header { display: block; min-height: 0; margin-bottom: 15px; padding: 0 5px; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+.dashboard-page .edc-student-shell .edc-main-header h2 { margin: 0; color: var(--edc-ink); font-size: 27px; font-weight: 800; line-height: 1.25; letter-spacing: -.55px; }
+.dashboard-page .edc-student-shell .edc-main-header .edc-breadcrumb { display: none; }
+.dashboard-page .edc-main[data-active-tab="overview"] .edc-breadcrumb { display: none; }
+.edc-page-description { margin: 3px 0 0; color: var(--edc-label-text); font-size: 12px; line-height: 1.5; }
+.dashboard-page .edc-main[data-active-tab="analytics"] > .edc-main-header { display: none; }
+.dashboard-page .edc-main[data-active-tab="mastery"] > .edc-main-header { display: none; }
+.dashboard-page .edc-student-shell .edc-btn-primary { border-color: var(--edc-btn-primary-border); background: var(--edc-btn-primary-bg); color: var(--edc-btn-primary-text); }
+.dashboard-page .edc-student-shell .edc-btn-light { border-color: var(--edc-btn-primary-border); background: var(--edc-btn-primary-bg); color: var(--edc-btn-primary-text); }
+.edc-student-topbar button:focus-visible { outline: 3px solid var(--edc-btn-focus-ring); outline-offset: 3px; }
+@media (min-width: 768px) {
+  .dashboard-page .edc-student-shell { display: block; position: relative; }
+  .dashboard-page .edc-student-shell > .edc-main { width: calc(100% - var(--edc-sidebar-width)); margin-left: var(--edc-sidebar-width); transition: width 200ms ease, margin-left 200ms ease; }
+  .dashboard-page:has(.edc-student-shell > .edc-workspace-sidebar.is-collapsed) .auth-topbar.edc-student-topbar { left: var(--edc-sidebar-width-icon); }
+  .dashboard-page:has(.edc-student-shell > .edc-workspace-sidebar.is-collapsed) .edc-student-shell > .edc-main { width: calc(100% - var(--edc-sidebar-width-icon)); margin-left: var(--edc-sidebar-width-icon); }
+}
+@media (max-width: 1280px) and (min-width: 901px) {
+  .dashboard-page .auth-topbar.edc-student-topbar { gap: 17px; padding: 0 19px; }
+  .dashboard-page .edc-student-shell > .edc-main { padding: 17px; }
+}
+@media (max-width: 900px) {
+  .dashboard-page .auth-topbar.edc-student-topbar { gap: 17px; padding: 0 16px; }
+  .edc-topbar-identity { display: none; }
+  .edc-topbar-profile > svg { margin-left: 0; }
+  .edc-student-topbar-actions { gap: 10px; }
+  .edc-topbar-account { padding-left: 10px; }
+}
+@media (max-width: 767px) {
+  .dashboard-page:has(.edc-student-topbar) { padding-top: var(--edc-navbar-height-mobile); }
+  .dashboard-page .auth-topbar.edc-student-topbar { right: 0; left: 0; height: var(--edc-navbar-height-mobile); min-height: var(--edc-navbar-height-mobile); }
+  .dashboard-page .edc-student-shell { display: block; min-height: calc(100dvh - var(--edc-navbar-height-mobile)); }
+  .dashboard-page .edc-student-shell > .edc-main { width: 100%; margin-left: 0; }
+}
+@media (max-width: 560px) {
+  .dashboard-page .auth-topbar.edc-student-topbar { gap: 10px; padding: 0 12px; }
+  .edc-student-topbar-actions { gap: 3px; }
+  .edc-topbar-account { padding-left: 5px; }
+  .edc-topbar-profile { gap: 3px; }
+  .edc-topbar-profile > svg { width: 12px; }
+  .edc-topbar-avatar { flex-basis: 30px; width: 30px; height: 30px; }
+  .edc-topbar-notification-panel { position: fixed; top: calc(var(--edc-navbar-height-mobile) + 8px); right: 12px; left: 12px; width: auto; max-height: calc(100dvh - var(--edc-navbar-height-mobile) - 20px); }
+  .dashboard-page .edc-student-shell > .edc-main { padding: 14px 12px 22px; }
+  .dashboard-page .edc-student-shell .edc-main-header h2 { font-size: 24px; }
+}
+
+@media (max-width: 480px) {
+  .dashboard-page .edc-student-brand > span { display: none; }
+  .edc-student-topbar-actions .edc-student-verification { padding-inline: 9px; font-size: 11px; }
+}
+
+/* Explicit filled/outlined action buttons only; text links and navigation retain their component styles. */
+.dashboard-page:has(.edc-student-topbar) :is(
+  button:is(
+    .edc-btn,
+    .edc-ov-primary,
+    .edc-ml-primary,
+    .edc-ml-secondary,
+    .edc-ml-certificate,
+    .edc-mr-primary,
+    .edc-mr-secondary,
+    .edc-review-leave-button,
+    .edc-review-submit,
+    .edc-review-empty-action,
+    .edc-dq-primary,
+    .edc-dq-secondary,
+    .edc-nb-primary,
+    .edc-nb-secondary,
+    .edc-notes-create,
+    .edc-notes-primary,
+    .edc-quiz-primary,
+    .edc-quiz-submit-sidebar,
+    .edc-quiz-cancel-sidebar,
+    .edc-sq-primary,
+    .edc-sq-secondary,
+    .edc-sq-submit-confirm,
+    .edca-primary,
+    .edca-student-submit-button,
+    .edc-sa-primary,
+    .edc-sa-secondary,
+    .edc-sa-dashboard-action,
+    .edlp-primary,
+    .edc-lp-primary,
+    .edc-lp-secondary,
+    .edc-cc-primary,
+    .edc-cc-secondary,
+    .edc-pds-primary,
+    .edc-pds-secondary,
+    .edc-book-clear,
+    .edc-sp-primary,
+    .edc-sp-secondary,
+    .edc-wishlist-action,
+    .edc-cart-checkout,
+    .edc-portfolio-add,
+    .edc-portfolio-add-inline,
+    .edc-profile-edit-button,
+    .edc-profile-upload-button,
+    .edc-profile-remove-button,
+    .edc-profile-save-button,
+    .edc-user-support-status-link
+  ),
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"],
+  a.edc-btn,
+  a.edc-pds-primary,
+  a.edc-pds-secondary,
+  label.edc-btn,
+  label.ecc-upload,
+  form button[type="submit"],
+  .edc-ov-learning-goal > button,
+  .edc-ml-samples-heading > button,
+  .edc-mr-row-actions button,
+  .edc-qa-form button,
+  .edc-qa-reply-form button,
+  .edc-qa-actions button,
+  .edc-notes-workspace-empty button,
+  .edc-nb-empty button,
+  .edc-la-header-actions > button,
+  .edc-quiz-actions button,
+  .edc-quiz-listitem button,
+  .edc-quiz-question-controls button,
+  .edca-actions button,
+  .edca-student-row-actions button,
+  .edca-student-history article button,
+  .edc-cc-assessments button,
+  .edc-cc-resources > div > button,
+  .edc-book-actions button,
+  .edc-book-review-form button,
+  .edc-books-empty button,
+  .edc-sp-empty button,
+  .edc-tm-empty button,
+  .edc-tm-panel-heading > button,
+  .edc-wishlist-hero > button,
+  .edc-wishlist-empty > button,
+  .edc-purchase-actions button,
+  .edc-purchases-empty button,
+  .edc-ebooks-actions button,
+  .edc-ebooks-empty button,
+  .edc-cart-items-heading > div button,
+  .edc-cart-unavailable button,
+  .edc-cart-empty button,
+  .edc-cart-browse > button,
+  .edc-cart-course-list article > button,
+  .edc-portfolio-certificate-copy > button,
+  .edc-profile-panel-heading > button,
+  .edc-research-quick-actions button,
+  .edc-user-appeals-card > button,
+  .edc-user-appeal-reply button,
+  .edc-user-support-reply button,
+  .edc-user-support-ticket-actions button,
+  .edc-user-support-ticket-form > button,
+  .edc-user-support-search > button:not([aria-label]),
+  .edc-report-dialog > div:last-child button
+) {
+  background: var(--student-button-surface, var(--edc-btn-primary-bg)) !important;
+  border-color: var(--student-button-border, var(--edc-btn-primary-border)) !important;
+  color: var(--edc-btn-primary-text) !important;
+
+  & > svg {
+    color: inherit !important;
+  }
+
+  &:hover:not(:disabled):not([aria-disabled="true"]) {
+    --student-button-surface: linear-gradient(180deg, var(--edc-gold-light), var(--edc-gold) 65%);
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--edc-btn-focus-ring);
+    outline-offset: 3px;
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+/* Selected student tabs and filters use the shared yellow surface. */
+.dashboard-page:has(.edc-student-topbar) :is(
+  .edc-ml-tabs button.active,
+  .edc-nb-tabs button[aria-pressed="true"],
+  .edc-lp-tabs button[aria-pressed="true"],
+  .edc-books-subject-chips button.active,
+  .edc-books-tabs button.active,
+  .edc-books-toolbar > button,
+  .edc-ebooks-tabs button.active,
+  .edc-sp-tabs button.active,
+  .edc-sa-dashboard-tabs button.active,
+  .edc-wishlist-tabs button.active,
+  .edc-purchases-tabs button.active,
+  .edc-portfolio-tab-active
+) {
+  background: var(--edc-btn-primary-bg);
+  border-color: var(--edc-btn-primary-border);
+  color: var(--edc-btn-primary-text);
+  box-shadow: var(--edc-shadow-xs);
+
+  & > svg {
+    color: inherit;
+  }
+}
+
+/* Recolor progress indicators without changing their percentages or geometry. */
+.dashboard-page:has(.edc-student-topbar) .edc-ov-donut {
+  background: conic-gradient(from 0deg, var(--student-circle-color) 0%, var(--student-circle-color) var(--progress), var(--student-circle-track) var(--progress), var(--student-circle-track) 100%);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-la-donut {
+  background: conic-gradient(var(--student-circle-color) var(--progress), var(--student-circle-light) 0 88%, var(--student-circle-track) 88%);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(.edc-tm-ring, .edc-sp-progress-ring) {
+  background: conic-gradient(var(--student-circle-color) var(--progress), var(--student-circle-track) 0);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-sa-grade-ring {
+  background: conic-gradient(var(--student-circle-color) var(--grade), var(--student-circle-track) 0);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-tm-ring.is-empty {
+  background: var(--student-circle-track);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-quiz-timer-ring {
+  border-color: var(--student-circle-track);
+  border-top-color: var(--student-circle-color);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(
+  .edc-progress-track,
+  .edc-profile-progress,
+  .edc-ov-goal-progress > div,
+  .edc-ov-inline-progress > div,
+  .edc-ml-progress-track,
+  .edc-la-mini-track,
+  .edc-tm-progress,
+  .edc-sq-progress-track,
+  .edc-quiz-progress,
+  .edlp-track,
+  .edc-lp-track,
+  .edc-cc-track,
+  .edc-sp-goal-progress > div,
+  .edc-sp-chart-day > span,
+  .edc-sp-report-chart > div > i
+) {
+  background: var(--student-progress-track);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(
+  .edc-progress-fill,
+  .edc-profile-progress span,
+  .edc-ov-goal-progress > div > span,
+  .edc-ov-inline-progress > div > span,
+  .edc-ml-progress-track > span,
+  .edc-la-mini-track span,
+  .edc-tm-progress b,
+  .edc-sq-progress-track > span,
+  .edc-quiz-progress span,
+  .edlp-track > div,
+  .edc-lp-track > span,
+  .edc-cc-track > span,
+  .edc-sp-goal-progress > div i,
+  .edc-sp-chart-day i,
+  .edc-sp-report-chart > div > i > b
+) {
+  background: var(--student-progress-color);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(.edc-ov-progress-legend i, .edc-la-legend i) {
+  background: var(--student-circle-color);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(.edc-ov-progress-legend i.in-progress, .edc-la-legend i.active) {
+  background: var(--student-circle-light);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(.edc-ov-progress-legend i.not-started, .edc-la-legend i.not-started) {
+  background: var(--student-circle-track);
+}
+
+.dashboard-page:has(.edc-student-topbar) :is(.edc-la-line, .edc-la-point) {
+  stroke: var(--edc-btn-primary-border);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-la-chart stop {
+  stop-color: var(--edc-btn-primary-border);
+}
+
+/* Book cover placeholders use the same gold accent as the student actions. */
+.dashboard-page:has(.edc-student-topbar) .edc-books-directory .edc-public-book-cover-empty {
+  color: var(--edc-btn-primary-border);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-books-directory .edc-books-toolbar > .edc-books-library-button {
+  background: var(--edc-btn-primary-border);
+  border-color: var(--edc-btn-primary-border);
+  color: var(--edc-btn-primary-text);
+}
+
+/* White action buttons in the review, library, assignment and workspace cards. */
+.dashboard-page:has(.edc-student-topbar) :is(
+  .edc-ml-course-actions > button,
+  .edc-mr-row-actions button,
+  .edc-books-directory .edc-book-actions button,
+  .edc-sa-dashboard-action,
+  .edc-purchase-actions button,
+  .edc-ebooks-actions button,
+  .edc-research-quick-actions button,
+  .edc-portfolio-certificate-copy > button
+) {
+  --student-button-surface: var(--edc-white) !important;
+  --edc-btn-primary-text: var(--edc-black);
+  --student-button-border: var(--edc-line);
+}
+
+.dashboard-page:has(.edc-student-topbar) .edc-ml-course-actions > button:disabled {
+  opacity: 1 !important;
+
+  & > svg {
+    opacity: .5;
+  }
+
+  @media (min-width: 768px) {
+    .dashboard-page:has(.edc-student-shell) .auth-topbar.edc-student-topbar {
+      left: var(--edc-sidebar-width);
+      transition: left 200ms ease;
+    }
+
+    .dashboard-page:has(.edc-student-shell > .edc-workspace-sidebar.is-collapsed) .auth-topbar.edc-student-topbar {
+      left: var(--edc-sidebar-width-icon);
+    }
+
+    .dashboard-page:has(.edc-student-shell > .edc-workspace-sidebar.is-collapsed) .edc-student-shell > .edc-main {
+      width: calc(100% - var(--edc-sidebar-width-icon));
+      margin-left: var(--edc-sidebar-width-icon);
+    }
+  }
+
+  .edc-student-sidebar-promo {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .dashboard-page:has(.edc-student-shell):has(.edc-student-topbar) {
+    padding-top: var(--edc-navbar-height);
+  }
+
+  @media (max-width: 767px) {
+    .dashboard-page:has(.edc-student-shell):has(.edc-student-topbar) {
+      padding-top: var(--edc-navbar-height-mobile);
+    }
+
+    .dashboard-page:has(.edc-student-shell) .auth-topbar.edc-student-topbar {
+      right: 0;
+      left: 0;
+      height: var(--edc-navbar-height-mobile);
+      min-height: var(--edc-navbar-height-mobile);
+    }
+  }
+}

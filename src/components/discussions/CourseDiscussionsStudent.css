@@ -1,0 +1,275 @@
+/* Student Course Q&A: FAQ-inspired numbered cards, retaining EduConnect colors and typography. */
+.edc-qa-student {
+  display: grid;
+  width: min(100%, 1240px);
+  gap: 18px;
+  margin: 0 auto;
+  color: #252a40;
+}
+
+.edc-qa-student-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 23px 26px;
+  border: 1px solid #e8e5f1;
+  border-radius: 18px;
+  background: linear-gradient(115deg, #fff 0%, #faf8ff 100%);
+  box-shadow: 0 7px 22px rgba(41, 31, 72, .045);
+}
+
+.edc-qa-student-overview > div:first-child > span {
+  color: #7955c4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.edc-qa-student-overview h3 {
+  margin: 6px 0 5px;
+  color: #242840;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.edc-qa-student-overview p {
+  margin: 0;
+  color: #747b90;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.edc-qa-student-total {
+  display: grid;
+  justify-items: center;
+  min-width: 82px;
+  padding: 10px 14px;
+  border: 1px solid #e8ddff;
+  border-radius: 13px;
+  background: #f6f2ff;
+  color: #6740bd;
+}
+
+.edc-qa-student-total strong {
+  font-size: 23px;
+  line-height: 1.1;
+}
+
+.edc-qa-student-total span {
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.edc-qa-student .edc-qa-filters {
+  grid-template-columns: minmax(240px, .7fr) minmax(0, 1.3fr);
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid #e8eaf1;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 5px 16px rgba(31, 37, 67, .035);
+}
+
+.edc-qa-student .edc-qa-filters label {
+  gap: 7px;
+  color: #4b5269;
+  font-size: 12px;
+  font-weight: 750;
+}
+
+.edc-qa-student .edc-qa-filters select,
+.edc-qa-student .edc-qa-search {
+  min-height: 43px;
+  border-color: #e0e3ed;
+  border-radius: 10px;
+  color: #30364d;
+}
+
+.edc-qa-student .edc-qa-search:focus-within {
+  border-color: #a88ae5;
+  box-shadow: 0 0 0 3px rgba(112, 66, 216, .11);
+}
+
+.edc-qa-student .edc-qa-form {
+  gap: 11px;
+  padding: 20px 22px;
+  border-color: #e6e2ef;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(31, 37, 67, .035);
+}
+
+.edc-qa-student .edc-qa-form h3 {
+  color: #292d44;
+  font-size: 16px;
+}
+
+.edc-qa-student .edc-qa-form p {
+  margin-top: -5px;
+  font-size: 12px;
+}
+
+.edc-qa-student .edc-qa-form input,
+.edc-qa-student .edc-qa-form textarea {
+  border-color: #e0e3ed;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.edc-qa-student .edc-qa-form input:focus,
+.edc-qa-student .edc-qa-form textarea:focus {
+  border-color: #a88ae5;
+  outline: 3px solid rgba(112, 66, 216, .11);
+}
+
+.edc-qa-student .edc-qa-form button,
+.edc-qa-student .edc-qa-reply-form button {
+  min-height: 40px;
+  border-radius: 9px;
+  background: #7042d8;
+  font-weight: 750;
+  transition: background .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.edc-qa-student .edc-qa-form button:hover:not(:disabled),
+.edc-qa-student .edc-qa-reply-form button:hover {
+  background: #5e34c0;
+  box-shadow: 0 6px 14px rgba(91, 53, 151, .16);
+  transform: translateY(-1px);
+}
+
+.edc-qa-student .edc-qa-list {
+  gap: 12px;
+}
+
+.edc-qa-student .edc-qa-card {
+  gap: 12px;
+  padding: 18px 20px;
+  border-color: #e7e9f1;
+  border-radius: 16px;
+  box-shadow: 0 5px 16px rgba(31, 37, 67, .035);
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.edc-qa-student .edc-qa-card:hover {
+  border-color: #d9cef0;
+  box-shadow: 0 9px 22px rgba(41, 31, 72, .075);
+  transform: translateY(-1px);
+}
+
+.edc-qa-student .edc-qa-meta span {
+  background: #f4f0fc;
+  color: #6743ad;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.edc-qa-student .edc-qa-meta .edc-qa-resolved {
+  background: #eaf7ef;
+  color: #28764d;
+}
+
+.edc-qa-question-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.edc-qa-number {
+  display: grid;
+  flex: 0 0 46px;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid #eeeaf3;
+  border-radius: 50%;
+  background: #f7f6fa;
+  color: #292d44;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.edc-qa-question-row > div {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.edc-qa-student .edc-qa-card h3 {
+  color: #252a40;
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.45;
+}
+
+.edc-qa-student .edc-qa-card small {
+  color: #8a91a3;
+  font-size: 10px;
+}
+
+.edc-qa-student .edc-qa-answer {
+  margin-left: 60px;
+  border: 1px solid #eee8fa;
+  border-left: 3px solid #8055d6;
+  border-radius: 11px;
+  background: #faf8ff;
+}
+
+.edc-qa-student .edc-qa-answer strong {
+  color: #493579;
+  font-size: 12px;
+}
+
+.edc-qa-student .edc-qa-answer p {
+  color: #53586b;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.edc-qa-student .edc-qa-actions {
+  padding-top: 10px;
+  border-top: 1px solid #f0f1f5;
+}
+
+.edc-qa-student .edc-qa-actions button {
+  border-color: #e1e3ec;
+  border-radius: 8px;
+  color: #5c6277;
+  font-size: 11px;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.edc-qa-student .edc-qa-actions button:hover {
+  border-color: #d9cef0;
+  background: #faf8ff;
+  color: #6740bd;
+}
+
+.edc-qa-student .edc-qa-empty {
+  border: 1px dashed #dfe2ed;
+  border-radius: 15px;
+  background: #fbfcff;
+  line-height: 1.6;
+}
+
+.edc-qa-student .edc-qa-note {
+  color: #8c92a3;
+}
+
+@media (max-width: 700px) {
+  .edc-qa-student-overview {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .edc-qa-student-total {
+    min-width: 68px;
+    padding: 8px 10px;
+  }
+
+  .edc-qa-student .edc-qa-answer {
+    margin-left: 0;
+  }
+}

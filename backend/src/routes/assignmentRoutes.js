@@ -1,0 +1,15 @@
+import { Router } from 'express';
+import { protect, authorize } from '../middleware/authMiddleware.js';
+import * as c from '../controllers/assignmentController.js';
+const router=Router(); router.use(protect);
+router.get('/courses/:courseId/teacher',authorize('teacher'),c.teacherList);
+router.post('/courses/:courseId/teacher',authorize('teacher'),c.teacherSave);
+router.put('/courses/:courseId/teacher/:assignmentId',authorize('teacher'),c.teacherSave);
+router.patch('/courses/:courseId/teacher/:assignmentId/publish',authorize('teacher'),c.teacherPublish);
+router.delete('/courses/:courseId/teacher/:assignmentId',authorize('teacher'),c.teacherDelete);
+router.get('/courses/:courseId/student',authorize('student'),c.studentList);
+router.put('/courses/:courseId/student/:assignmentId/submission',authorize('student'),c.studentSubmit);
+router.patch('/courses/:courseId/teacher/:assignmentId/submissions/:submissionId',authorize('teacher'),c.teacherGrade);
+router.post('/courses/:courseId/attachments',c.uploadAttachment);
+router.get('/courses/:courseId/attachments/:fileId',c.downloadAttachment);
+export default router;

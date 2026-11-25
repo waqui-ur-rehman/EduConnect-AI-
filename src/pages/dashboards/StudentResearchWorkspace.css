@@ -1,0 +1,112 @@
+.edc-research-dashboard{display:grid;gap:12px;color:#2b1048}
+.edc-research-dashboard .edc-research-hero{position:relative;display:flex;min-height:105px;align-items:center;justify-content:space-between;gap:18px;overflow:hidden;padding:16px 21px;border:1px solid #e6ddfa;border-radius:15px;background:linear-gradient(110deg,#fff 0%,#fbf9ff 52%,#eee7ff 100%);box-shadow:0 5px 16px #3a226f0d}
+.edc-research-hero::after{position:absolute;top:-68px;right:60px;width:180px;height:180px;border-radius:50%;background:#d7c6ff4a;content:""}
+.edc-research-hero>div:first-child{position:relative;z-index:1}
+.edc-research-eyebrow{color:#7956c4;font-size:8px;font-weight:800;letter-spacing:1.2px}
+.edc-research-hero h1{display:flex;align-items:center;gap:8px;margin:4px 0;color:#25154b;font-size:25px;letter-spacing:-.6px}
+.edc-research-hero h1 svg{color:#7132d0}
+.edc-research-hero p{margin:0;color:#615774;font-size:11px}
+.edc-research-hero small{display:block;margin-top:5px;color:#867b99;font-size:9px}
+.edc-research-hero-art{position:relative;z-index:1;display:flex;align-items:center;gap:7px;padding-right:24px;color:#6d31ce}
+.edc-research-hero-art svg:first-child{width:53px;height:53px}
+.edc-research-hero-art svg:nth-child(2){width:63px;height:63px;color:#8959e0}
+.edc-research-hero-art svg:last-child{width:37px;height:37px;color:#9c7ce1}
+.edc-research-dashboard .edc-research-overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.edc-research-dashboard .edc-research-count{display:flex;min-width:0;align-items:center;gap:10px;padding:10px 12px;border:1px solid #e1d3f8;border-radius:12px;color:inherit;background:#eee5ff;box-shadow:0 4px 12px #291b5008;font:inherit;text-align:left;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.edc-research-dashboard .edc-research-count:hover{transform:translateY(-2px);box-shadow:0 7px 16px #291b5014}
+.edc-research-dashboard .edc-research-count:focus-visible{outline:2px solid #b89add;outline-offset:2px}
+.edc-research-count-icon{display:grid;width:38px;height:38px;flex:none;place-items:center;border-radius:10px;color:#8119df;background:#ddceff}
+.edc-research-count-copy{display:grid;gap:3px;min-width:0}
+.edc-research-count-copy small{overflow:hidden;color:#53366e;font-size:9px;font-weight:650;text-overflow:ellipsis;white-space:nowrap}
+.edc-research-count-copy strong{color:#30104f;font-size:20px;font-weight:800;line-height:1.1}
+.edc-research-dashboard .edc-research-count.blue{border-color:#d6e5ff;background:#e8f2ff}
+.edc-research-dashboard .edc-research-count.blue .edc-research-count-icon{color:#4f7cef;background:#d6e7ff}
+.edc-research-dashboard .edc-research-count.green{border-color:#d7eedc;background:#e9f7ed}
+.edc-research-dashboard .edc-research-count.green .edc-research-count-icon{color:#54a832;background:#d9f0dd}
+.edc-research-dashboard .edc-research-count.violet{border-color:#e1d6fb;background:#f0e9ff}
+.edc-research-dashboard .edc-research-count.violet .edc-research-count-icon{color:#8b22df;background:#e2d6ff}
+.edc-research-quick-actions{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.edc-research-quick-actions button{display:flex;min-width:0;min-height:54px;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:7px;border:1px solid #ded2f6;border-radius:11px;color:#6e2ed0;background:linear-gradient(150deg,#fff,#f8f4ff);box-shadow:0 3px 9px #3a226f0c;font:inherit;font-size:9px;font-weight:700;text-align:center;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.edc-research-quick-actions button:hover{transform:translateY(-2px);box-shadow:0 6px 13px #3a226f16}
+.edc-research-quick-actions button:focus-visible,.edc-research-tool-grid button:focus-visible,.edc-research-project-card:focus-visible,.edc-research-recent-list button:focus-visible{outline:2px solid #b89add;outline-offset:2px}
+.edc-research-quick-actions button.edc-research-quick-primary{border-color:#7926dc;color:#fff;background:linear-gradient(110deg,#8b26ed,#690bd0);box-shadow:0 4px 10px #7623d333}
+.edc-research-quick-actions button span{overflow:hidden;max-width:100%;text-overflow:ellipsis;white-space:nowrap}
+.edc-research-home-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;gap:10px}
+.edc-research-home-panel{display:grid;align-content:start;gap:9px;min-width:0;padding:11px;border:1px solid #e5dcf5;border-radius:13px;background:#fff;box-shadow:0 5px 17px #3519630c}
+.edc-research-projects-panel{grid-column:1/-1}
+.edc-research-home-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;min-width:0}
+.edc-research-home-heading>div{min-width:0}
+.edc-research-home-heading h2{display:flex;align-items:center;gap:6px;margin:0;color:#2f1e50;font-size:13px}
+.edc-research-home-heading h2 svg{color:#753bd0}
+.edc-research-home-heading p{margin:3px 0 0;color:#786e87;font-size:9px}
+.edc-research-home-heading>button{display:inline-flex;flex:none;align-items:center;gap:4px;border:0;color:#7134c9;background:transparent;font-size:9px;font-weight:750;cursor:pointer}
+.edc-research-project-toolbar{display:grid;grid-template-columns:minmax(0,1fr) 130px;gap:7px}
+.edc-research-dashboard .edc-research-search{display:flex;min-width:0;height:32px;align-items:center;gap:6px;padding:0 9px;border:1px solid #ded2f0;border-radius:8px;color:#7c36d3;background:#fff}
+.edc-research-dashboard .edc-research-search input{width:100%;min-width:0;height:100%;padding:0;border:0;outline:0;color:#34244f;background:transparent;font:inherit;font-size:9px}
+.edc-research-dashboard .edc-research-search input:focus{border:0;outline:none;box-shadow:none}
+.edc-research-project-toolbar select{min-width:0;padding:0 8px;border:1px solid #ded2f0;border-radius:8px;color:#503b6b;background:#fff;font:inherit;font-size:9px}
+.edc-research-project-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.edc-research-project-card{display:flex;min-width:0;align-items:flex-start;gap:7px;padding:9px;border:1px solid #e2d8f6;border-radius:10px;color:inherit;background:linear-gradient(120deg,#fff,#faf8ff);box-shadow:0 3px 9px #3019560c;text-align:left;cursor:pointer}
+.edc-research-project-card:hover{border-color:#c5a9ee;box-shadow:0 5px 12px #30195612}
+.edc-research-project-icon{display:grid;width:31px;height:31px;flex:none;place-items:center;border-radius:8px;color:#762bd1;background:#eee5ff}
+.edc-research-project-content{display:grid;flex:1;gap:4px;min-width:0}
+.edc-research-project-content>strong{display:-webkit-box;overflow:hidden;color:#30204e;font-size:9px;line-height:1.35;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.edc-research-project-content>span:not(.edc-research-status){display:-webkit-box;overflow:hidden;color:#655975;font-size:8px;line-height:1.4;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.edc-research-status{justify-self:start;padding:3px 6px;border-radius:99px;color:#7132c5;background:#f0e8ff;font-size:7px;font-weight:750}
+.edc-research-status.completed{color:#368328;background:#e7f6e8}
+.edc-research-status.on-hold,.edc-research-status.planning{color:#a46b00;background:#fff2d6}
+.edc-research-project-date{display:flex;align-items:center;gap:4px;margin-top:3px;color:#81758e;font-size:7px}
+.edc-research-project-date svg{color:#7044c5}
+.edc-research-project-arrow{flex:none;margin-top:9px;color:#7a43c6}
+.edc-research-dashboard .edc-research-disclaimer{margin:0;color:#81758e;font-size:8px;line-height:1.45}
+.edc-research-recent-list{display:grid}
+.edc-research-recent-list button{display:grid;grid-template-columns:29px minmax(0,1fr) auto 14px;align-items:center;gap:7px;min-width:0;padding:7px 4px;border:0;border-top:1px solid #eee8f7;color:#423454;background:transparent;text-align:left;cursor:pointer}
+.edc-research-recent-icon{display:grid;width:27px;height:27px;place-items:center;border-radius:7px;color:#7438cc;background:#eee5ff}
+.edc-research-recent-list button>span:nth-child(2){display:grid;gap:2px;min-width:0}
+.edc-research-recent-list button strong{overflow:hidden;color:#34234f;font-size:8px;text-overflow:ellipsis;white-space:nowrap}
+.edc-research-recent-list button small{color:#776c86;font-size:7px}
+.edc-research-recent-list button>svg{color:#7438cc}
+.edc-research-tool-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.edc-research-tool-grid button{display:grid;grid-template-columns:31px minmax(0,1fr) 13px;align-items:center;gap:7px;min-width:0;min-height:55px;padding:7px;border:1px solid #e1d6fb;border-radius:9px;color:#362750;background:linear-gradient(145deg,#fff,#f7f3ff);text-align:left;cursor:pointer}
+.edc-research-tool-grid button:hover{border-color:#c3a9ed;box-shadow:0 4px 10px #30195610}
+.edc-research-tool-grid button>span:first-child{display:grid;width:30px;height:30px;place-items:center;border-radius:8px;color:#792bd3;background:#eee5ff}
+.edc-research-tool-grid button>span:nth-child(2){display:grid;gap:3px;min-width:0}
+.edc-research-tool-grid button strong{overflow:hidden;color:#36234f;font-size:8px;text-overflow:ellipsis;white-space:nowrap}
+.edc-research-tool-grid button small{display:-webkit-box;overflow:hidden;color:#766a84;font-size:7px;line-height:1.35;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.edc-research-tool-grid button>svg{color:#793bc8}
+.edc-research-storage-note{margin:0;color:#81758e;font-size:8px;text-align:right}
+.edc-research-section-view{display:grid;gap:17px}
+.edc-research-back{display:inline-flex;justify-self:start;align-items:center;gap:6px;padding:0;border:0;color:#7134c9;background:transparent;font:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.edc-research-back svg{transform:rotate(180deg)}
+.edc-research-section-view .edc-research-tabs{display:flex;gap:7px;flex-wrap:wrap}
+.edc-research-section-view .edc-research-tabs button{border:1px solid #e3d8f7;border-radius:9px;padding:8px 11px;background:#fff;color:#594c71;cursor:pointer;font:inherit;font-size:11px;font-weight:650}
+.edc-research-section-view .edc-research-tabs button.active{background:linear-gradient(105deg,#8b26ed,#690bd0);color:#fff;border-color:#7820dc}
+.edc-research-section-view .edc-research-layout{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:12px;align-items:start}
+.edc-research-section-view .edc-research-editor,.edc-research-section-view .edc-research-library{min-width:0;padding:14px;border:1px solid #e5dcf5;border-radius:12px;background:#fff;box-shadow:0 5px 16px #3519630c}
+.edc-research-section-view .edc-research-editor h3,.edc-research-section-view .edc-research-library h3{margin:0;color:#30204e;font-size:15px}
+.edc-research-section-view .edc-research-muted,.edc-research-section-view .edc-research-disclaimer{color:#766b84;font-size:11px;line-height:1.55}
+.edc-research-section-view .edc-research-form{display:grid;gap:11px;margin-top:12px}
+.edc-research-section-view .edc-research-form label{display:grid;gap:6px;color:#483858;font-size:11px;font-weight:650}
+.edc-research-section-view .edc-research-form input,.edc-research-section-view .edc-research-form select,.edc-research-section-view .edc-research-form textarea,.edc-research-section-view .edc-research-search input{border:1px solid #ded5ef;border-radius:8px;background:#fff;color:#302744;font:inherit;font-size:11px;padding:9px 10px;box-sizing:border-box}
+.edc-research-section-view .edc-research-form input:focus,.edc-research-section-view .edc-research-form textarea:focus,.edc-research-section-view .edc-research-form select:focus,.edc-research-section-view .edc-research-search input:focus{outline:2px solid #bfa5f2;outline-offset:1px}
+.edc-research-section-view .edc-research-form textarea{resize:vertical}
+.edc-research-section-view .edc-research-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:5px}
+.edc-research-section-view .edc-research-notice{margin:0;color:#6740b4;font-size:11px}
+.edc-research-section-view .edc-research-library-head{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.edc-research-section-view .edc-research-search{display:flex;min-width:180px;align-items:center;gap:6px;color:#7c699d}
+.edc-research-section-view .edc-research-search input{min-width:0;padding:8px}
+.edc-research-section-view .edc-research-list{display:grid;gap:9px}
+.edc-research-section-view .edc-research-item{min-width:0;padding:12px;border:1px solid #e9e2f5;border-radius:10px;background:#fcfaff}
+.edc-research-section-view .edc-research-item h4{margin:0 0 8px;color:#30204e;font-size:13px;overflow-wrap:anywhere}
+.edc-research-section-view .edc-research-field{margin:5px 0;color:#544762;font-size:10px;line-height:1.5;overflow-wrap:anywhere;white-space:pre-wrap}
+.edc-research-section-view .edc-research-field strong{color:#49365c}
+.edc-research-section-view .edc-research-field a{color:#6b3ac4;text-decoration:underline}
+.edc-research-section-view .edc-research-item>small{display:block;margin-top:8px;color:#867b91;font-size:9px}
+.edc-research-section-view .edc-research-disclaimer{margin:0}
+.edc-research-dashboard .edc-empty{min-height:95px;gap:5px;padding:12px;border:1px dashed #ddcff0;border-radius:10px;background:#fbf9ff;text-align:center}
+.edc-research-dashboard .edc-empty h3{margin:0;color:#30204e;font-size:10px}
+.edc-research-dashboard .edc-empty p{margin:0;color:#7c738b;font-size:8px}
+@media(max-width:1050px){.edc-research-quick-actions{grid-template-columns:repeat(3,minmax(0,1fr))}.edc-research-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.edc-research-section-view .edc-research-layout{grid-template-columns:1fr}}
+@media(max-width:650px){.edc-research-dashboard .edc-research-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.edc-research-home-grid{grid-template-columns:1fr}.edc-research-projects-panel{grid-column:auto}.edc-research-recent-panel,.edc-research-tools-panel{grid-column:auto}.edc-research-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.edc-research-section-view .edc-research-tabs button{flex:1 1 45%}}
+@media(max-width:430px){.edc-research-dashboard .edc-research-hero{padding:13px}.edc-research-hero h1{font-size:20px}.edc-research-hero-art{position:absolute;right:0;padding-right:5px;opacity:.3}.edc-research-hero-art svg:first-child{width:35px}.edc-research-hero-art svg:nth-child(2){width:43px}.edc-research-hero-art svg:last-child{width:27px}.edc-research-quick-actions{grid-template-columns:repeat(2,minmax(0,1fr))}.edc-research-project-toolbar{grid-template-columns:minmax(0,1fr)}.edc-research-project-grid{grid-template-columns:1fr}.edc-research-home-heading h2{font-size:11px}.edc-research-tool-grid{grid-template-columns:1fr}}

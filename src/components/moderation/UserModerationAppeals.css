@@ -1,0 +1,133 @@
+.edc-user-appeals-page { display: grid; gap: 18px; padding: 22px; color: #231747; }
+.edc-user-appeals-heading { display: flex; align-items: flex-start; gap: 14px; }
+.edc-user-appeals-heading > span { display: grid; width: 44px; height: 44px; flex: 0 0 auto; place-items: center; border-radius: 13px; background: #f0e9ff; color: var(--edc-dashboard-accent, #6d28d9); }
+.edc-user-appeals-heading h2 { margin: 3px 0 6px; font-size: 23px; }
+.edc-user-appeals-heading p { max-width: 720px; margin: 0; color: #70698a; font-size: 13px; line-height: 1.6; }
+.edc-user-appeals-eyebrow { color: #8a82a3; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.edc-user-appeals-grid { display: grid; grid-template-columns: minmax(280px, .9fr) minmax(340px, 1.1fr); align-items: start; gap: 16px; }
+.edc-user-appeals-card { display: grid; gap: 13px; min-width: 0; padding: 20px; border: 1px solid #e8e2f5; border-radius: 15px; background: #fff; box-shadow: 0 5px 18px rgba(40, 22, 83, .035); }
+.edc-user-appeals-card h3 { margin: 0 0 3px; font-size: 16px; }
+.edc-user-appeals-subheading { margin-top: 7px !important; padding-top: 13px; border-top: 1px solid #eee9f7; }
+.edc-user-appeals-card label { display: grid; gap: 6px; color: #3b315a; font-size: 12px; font-weight: 700; }
+.edc-user-appeals-card input, .edc-user-appeals-card select, .edc-user-appeals-card textarea { width: 100%; box-sizing: border-box; padding: 10px 11px; border: 1px solid #ded7ee; border-radius: 9px; background: #fff; color: #2c2148; font: inherit; font-size: 13px; }
+.edc-user-appeals-card textarea { resize: vertical; }
+.edc-user-appeals-card > button { display: inline-flex; align-items: center; justify-content: center; justify-self: start; gap: 7px; padding: 10px 14px; border: 0; border-radius: 9px; background: var(--edc-dashboard-accent, #6d28d9); color: #fff; font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
+.edc-user-appeals-feedback { display: flex; align-items: center; gap: 6px; margin: 0; font-size: 12px; }
+.edc-user-appeals-feedback.error { color: #b42318; }
+.edc-user-appeals-feedback.success { color: #16794a; }
+.edc-user-appeals-list { display: grid; gap: 11px; }
+.edc-user-appeal-item { display: grid; gap: 7px; padding: 13px; border: 1px solid #eee9f7; border-radius: 11px; background: #fdfcff; }
+.edc-user-appeal-item-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.edc-user-appeal-item-heading strong { font-size: 13px; }
+.edc-user-appeal-item-heading span { flex: 0 0 auto; padding: 4px 7px; border-radius: 999px; background: #f0e9ff; color: #5c26bd; font-size: 10px; font-weight: 800; }
+.edc-user-appeal-item-heading span[data-status="accepted"], .edc-user-appeal-item-heading span[data-status="resolved"] { background: #e6f7ed; color: #16794a; }
+.edc-user-appeal-item-heading span[data-status="rejected"] { background: #fff0ee; color: #b42318; }
+.edc-user-appeal-item p { margin: 0; color: #655d7b; font-size: 12px; line-height: 1.5; white-space: pre-wrap; }
+.edc-user-appeal-item > small, .edc-user-appeal-response small { color: #89829d; font-size: 10px; }
+.edc-user-appeal-response { display: grid; gap: 4px; margin-top: 4px; padding: 10px; border-left: 3px solid #8b5cf6; border-radius: 6px; background: #f5f1ff; }
+.edc-user-appeal-link { justify-self: start; padding: 0; border: 0; background: transparent; color: #6429c6; font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; }
+.edc-user-appeal-response strong { font-size: 11px; }
+.edc-user-appeals-empty, .edc-user-appeals-note { margin: 0; color: #817a96; font-size: 12px; line-height: 1.55; }
+.edc-user-appeals-note { padding: 0 2px; }
+.edc-user-appeals-card label > small { color: #817a96; font-size: 10px; font-weight: 500; }
+.edc-user-appeal-decision { padding: 10px; border-radius: 8px; background: #f5f1ff; }
+.edc-user-appeal-reply { display: grid; gap: 7px; margin-top: 5px; }
+.edc-user-appeal-reply textarea { width: 100%; box-sizing: border-box; padding: 9px; border: 1px solid #ded7ee; border-radius: 8px; font: inherit; font-size: 12px; }
+.edc-user-appeal-reply button { display: inline-flex; justify-self: end; align-items: center; gap: 6px; padding: 7px 10px; border: 0; border-radius: 8px; background: var(--edc-dashboard-accent, #6d28d9); color: #fff; font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; }
+.edc-user-appeal-reply button:disabled { cursor: not-allowed; opacity: .5; }
+.edc-user-support-center { display: grid; gap: 16px; padding: 22px; color: #231747; }
+.edc-user-support-heading { display: flex; align-items: flex-start; gap: 13px; }
+.edc-user-support-heading > span { display: grid; width: 45px; height: 45px; flex: 0 0 auto; place-items: center; border-radius: 13px; background: #f0e9ff; color: var(--edc-dashboard-accent, #6d28d9); }
+.edc-user-support-heading small { color: #8a82a3; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+.edc-user-support-heading h2 { margin: 3px 0 5px; font-size: 23px; }
+.edc-user-support-heading p, .edc-user-support-card-heading p { margin: 0; color: #70698a; font-size: 12px; line-height: 1.55; }
+.edc-user-support-grid { display: grid; grid-template-columns: minmax(280px, .9fr) minmax(320px, 1.1fr); align-items: start; gap: 15px; }
+.edc-user-support-card { display: grid; min-width: 0; gap: 12px; padding: 18px; border: 1px solid #e8e2f5; border-radius: 15px; background: #fff; box-shadow: 0 5px 18px rgba(40, 22, 83, .035); }
+.edc-user-support-card h3 { margin: 0; font-size: 16px; }
+.edc-user-support-card > label, .edc-user-support-fields > label, .edc-user-support-faq-search { display: grid; gap: 6px; color: #3b315a; font-size: 11px; font-weight: 700; }
+.edc-user-support-card input, .edc-user-support-card select, .edc-user-support-card textarea { width: 100%; box-sizing: border-box; padding: 9px 10px; border: 1px solid #ded7ee; border-radius: 8px; background: #fff; color: #2c2148; font: inherit; font-size: 12px; }
+.edc-user-support-card textarea { resize: vertical; }
+.edc-user-support-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
+.edc-user-support-attachment { display: grid; gap: 6px; }
+.edc-user-support-attachment svg { display: inline-block; vertical-align: middle; }
+.edc-user-support-card > button, .edc-user-support-reply button { display: inline-flex; align-items: center; justify-content: center; justify-self: start; gap: 7px; padding: 9px 12px; border: 0; border-radius: 8px; background: var(--edc-dashboard-accent, #6d28d9); color: #fff; font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
+.edc-user-support-card > button:disabled, .edc-user-support-reply button:disabled { cursor: not-allowed; opacity: .5; }
+.edc-user-support-storage-note, .edc-user-support-privacy { color: #817a96; font-size: 10px; line-height: 1.55; }
+.edc-user-support-card-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; color: var(--edc-dashboard-accent, #6d28d9); }
+.edc-user-support-faq-card details { padding: 9px 0; border-top: 1px solid #eee9f7; }
+.edc-user-support-faq-card summary { color: #342653; font-size: 12px; font-weight: 700; cursor: pointer; }
+.edc-user-support-faq-card details small { display: inline-block; margin-top: 6px; color: #8a82a3; font-size: 10px; }
+.edc-user-support-faq-card details p { margin: 5px 0 0; color: #655d7b; font-size: 11px; line-height: 1.5; white-space: pre-wrap; }
+.edc-user-support-faq-search { margin-top: 3px; }
+.edc-user-support-my-tickets { margin-top: 0; }
+.edc-user-support-ticket { display: grid; gap: 8px; padding: 14px 0; border-top: 1px solid #eee9f7; }
+.edc-user-support-ticket > header { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; }
+.edc-user-support-ticket > header div { display: grid; gap: 4px; }
+.edc-user-support-ticket > header strong { color: #342653; font-size: 13px; }
+.edc-user-support-ticket > header small, .edc-user-support-ticket > small { color: #89829d; font-size: 10px; }
+.edc-user-support-ticket > header > span { flex: 0 0 auto; padding: 4px 7px; border-radius: 999px; background: #f0e9ff; color: #5c26bd; font-size: 10px; font-weight: 800; }
+.edc-user-support-ticket > header > span[data-status="resolved"], .edc-user-support-ticket > header > span[data-status="accepted"] { background: #e6f7ed; color: #16794a; }
+.edc-user-support-ticket > header > span[data-status="closed"], .edc-user-support-ticket > header > span[data-status="rejected"] { background: #f2eff6; color: #70698a; }
+.edc-user-support-ticket > p { margin: 0; color: #655d7b; font-size: 12px; line-height: 1.5; white-space: pre-wrap; }
+.edc-user-support-ticket > a { color: #6429c6; font-size: 11px; font-weight: 700; }
+.edc-user-support-conversation { display: grid; gap: 7px; }
+.edc-user-support-conversation > div { display: grid; gap: 4px; padding: 9px; border-left: 3px solid #8b5cf6; border-radius: 7px; background: #f5f1ff; }
+.edc-user-support-conversation strong { color: #342653; font-size: 11px; }
+.edc-user-support-conversation strong small { color: #89829d; font-size: 10px; }
+.edc-user-support-conversation p { margin: 0; color: #655d7b; font-size: 11px; line-height: 1.45; white-space: pre-wrap; }
+.edc-user-support-conversation time { color: #89829d; font-size: 9px; }
+.edc-user-support-ticket-actions { display: flex; gap: 7px; }
+.edc-user-support-ticket-actions button { display: inline-flex; align-items: center; gap: 5px; padding: 7px 9px; border: 1px solid #ded7ee; border-radius: 8px; color: #5c26bd; background: white; font: inherit; font-size: 10px; font-weight: 700; cursor: pointer; }
+.edc-user-support-reply { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 8px; }
+.edc-user-support-reply textarea { width: 100%; box-sizing: border-box; padding: 9px; border: 1px solid #ded7ee; border-radius: 8px; font: inherit; font-size: 11px; }
+.edc-user-support-reply button { justify-self: end; padding: 8px 10px; font-size: 10px; }
+.edc-user-support-feedback { display: flex; align-items: center; gap: 6px; margin: 0; font-size: 12px; }
+.edc-user-support-feedback.error { color: #b42318; }
+.edc-user-support-feedback.success { color: #16794a; }
+.edc-user-support-empty { margin: 0; color: #817a96; font-size: 12px; line-height: 1.5; }
+@media (max-width: 850px) { .edc-user-support-grid { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .edc-user-support-center { padding: 14px; } .edc-user-support-card { padding: 14px; } .edc-user-support-reply { grid-template-columns: 1fr; } }
+@media (max-width: 850px) { .edc-user-appeals-grid { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .edc-user-appeals-page { padding: 14px; } .edc-user-appeals-card { padding: 15px; } }
+
+.edc-user-appeals-dashboard .edc-user-page-hero{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px;min-height:84px;padding:13px 16px;border:0;background:linear-gradient(105deg,#30005f,#650bb0 58%,#3b006d);color:#fff}
+.edc-user-appeals-dashboard .edc-user-page-hero::after{background:#c9a9ff1c}
+.edc-user-appeals-dashboard .edc-user-page-hero>span{width:44px;height:44px;color:#fff;background:#ffffff20}
+.edc-user-appeals-dashboard .edc-user-page-hero h1{color:#fff;font-size:21px}
+.edc-user-appeals-dashboard .edc-user-page-hero p{color:#f0e5ff}
+.edc-user-appeals-dashboard .edc-user-appeal-nav{display:flex;gap:6px;overflow-x:auto;padding:2px 0;scrollbar-width:thin}
+.edc-user-appeals-dashboard .edc-user-appeal-nav button{display:inline-flex;min-height:32px;flex:none;align-items:center;justify-content:center;gap:6px;padding:6px 11px;border:1px solid #e6dcf6;border-radius:999px;color:#43265d;background:#fff;font:inherit;font-size:9px;font-weight:750;cursor:pointer}
+.edc-user-appeals-dashboard .edc-user-appeal-nav button[aria-current=location]{border-color:#7715c6;color:#fff;background:#7411c2}
+.edc-user-appeals-dashboard .edc-user-appeals-heading-actions{position:relative;z-index:2;display:flex;align-items:center;gap:7px}
+.edc-user-appeals-dashboard .edc-user-appeals-heading-actions button{display:inline-flex;min-height:31px;align-items:center;justify-content:center;gap:5px;padding:6px 9px;border:1px solid #ffffff3d;border-radius:9px;color:#fff;background:#ffffff16;font:inherit;font-size:8px;font-weight:750;white-space:nowrap;cursor:pointer}
+.edc-user-appeals-dashboard .edc-user-appeals-heading-actions .edc-user-submit-appeal-link{border-color:#f0ce10;color:#2f1844;background:#ffd91b}
+.edc-user-appeals-dashboard .edc-user-case-stats{gap:8px}
+.edc-user-appeals-dashboard .edc-user-case-stat{min-height:64px;border-radius:11px}
+.edc-user-appeals-dashboard .edc-user-case-stat.purple{border-color:#4e1182;color:#fff;background:linear-gradient(115deg,#370066,#6e16b2)}
+.edc-user-appeals-dashboard .edc-user-case-stat.purple>span{color:#fff;background:#ffffff26}
+.edc-user-appeals-dashboard .edc-user-case-stat.purple small,.edc-user-appeals-dashboard .edc-user-case-stat.purple strong{color:#fff}
+.edc-user-appeals-dashboard .edc-user-case-stat.amber{border-color:#f0dfb8}
+.edc-user-appeals-dashboard .edc-user-case-stat.green{border-color:#d7eedc}
+.edc-user-appeals-dashboard .edc-user-governance-grid{grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr)}
+.edc-user-appeals-dashboard .edc-user-governance-grid .edc-user-case-results{grid-column:1;scroll-margin-top:14px}
+.edc-user-appeals-dashboard .edc-user-governance-grid .edc-user-case-details{grid-column:2;align-content:start;scroll-margin-top:14px}
+.edc-user-appeals-dashboard .edc-user-appeal-form,.edc-user-appeals-dashboard .edc-user-appeal-guidelines{scroll-margin-top:14px}
+.edc-user-appeals-dashboard .edc-user-case-list .edc-user-appeal-item[data-selected=true]{border-color:#a77fe6;background:#f4edff;box-shadow:0 0 0 2px #9868d726}
+.edc-user-appeals-dashboard .edc-user-case-select{display:grid;width:100%;gap:5px;padding:0;border:0;color:inherit;background:transparent;font:inherit;text-align:left;cursor:pointer}
+.edc-user-appeals-dashboard .edc-user-case-select .edc-user-appeal-item-heading{width:100%}
+.edc-user-appeals-dashboard .edc-user-case-select>small{color:#89829d;font-size:8px}
+.edc-user-appeals-dashboard .edc-user-case-select:focus-visible{outline:2px solid #b89add;outline-offset:3px}
+.edc-user-appeals-dashboard .edc-user-appeal-link{padding:3px 0}
+.edc-user-appeals-dashboard .edc-user-case-details-title{display:grid;gap:3px;padding:9px;border:1px solid #e8def8;border-radius:9px;background:#fcfaff}
+.edc-user-appeals-dashboard .edc-user-case-details-title strong{color:#34234f;font-size:11px}
+.edc-user-appeals-dashboard .edc-user-case-details-title small{color:#89829d;font-size:8px}
+.edc-user-appeals-dashboard .edc-user-case-details dl{display:grid;gap:0;margin:0}
+.edc-user-appeals-dashboard .edc-user-case-details dl>div{display:grid;grid-template-columns:minmax(78px,.45fr) minmax(0,1fr);gap:8px;padding:7px 2px;border-bottom:1px solid #eee9f7;font-size:9px}
+.edc-user-appeals-dashboard .edc-user-case-details dt{color:#70658a;font-weight:700}
+.edc-user-appeals-dashboard .edc-user-case-details dd{margin:0;color:#34234f;font-weight:650;overflow-wrap:anywhere}
+.edc-user-appeals-dashboard .edc-user-case-details dd span{display:inline-block;padding:3px 7px;border-radius:999px;background:#f0e9ff;color:#5c26bd;font-size:8px;font-weight:800}
+.edc-user-appeals-dashboard .edc-user-case-details-message,.edc-user-appeals-dashboard .edc-user-case-details-action{margin:0;padding:9px;border-radius:8px;background:#f7f3ff;color:#55466b;font-size:9px;line-height:1.5;overflow-wrap:anywhere}
+.edc-user-appeals-dashboard .edc-user-case-appeal-action{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:7px 9px;border:1px solid #d7c6f5;border-radius:8px;color:#6b2bbd;background:#f5efff;font:inherit;font-size:9px;font-weight:750;cursor:pointer}
+.edc-user-appeals-dashboard .edc-user-appeal-nav button:focus-visible,.edc-user-appeals-dashboard .edc-user-appeals-heading-actions button:focus-visible,.edc-user-appeals-dashboard .edc-user-case-appeal-action:focus-visible{outline:2px solid #b89add;outline-offset:2px}
+@media(max-width:850px){.edc-user-appeals-dashboard .edc-user-governance-grid{grid-template-columns:1fr}.edc-user-appeals-dashboard .edc-user-governance-grid .edc-user-case-results,.edc-user-appeals-dashboard .edc-user-governance-grid .edc-user-case-details{grid-column:1}}
+@media(max-width:700px){.edc-user-appeals-dashboard .edc-user-page-hero{grid-template-columns:auto minmax(0,1fr)}.edc-user-appeals-dashboard .edc-user-appeals-heading-actions{grid-column:1/-1;flex-wrap:wrap}.edc-user-appeals-dashboard .edc-user-case-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}

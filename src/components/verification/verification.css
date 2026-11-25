@@ -1,0 +1,44 @@
+.edc-identity-verified,
+.teacher-fullscreen-page .edc-teacher-user .edc-identity-verified,
+.dashboard-page .edc-student-shell .edc-sidebar-profile .edc-identity-verified,
+.edc-topbar-identity .edc-identity-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  vertical-align: middle;
+  padding: 4px 7px;
+  border: 1px solid #bee7d5;
+  border-radius: 6px;
+  background: #ecf9f2;
+  color: #18764e;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.edc-identity-verified svg { flex: none; }
+
+.edc-identity-section {
+  padding: 20px;
+  border: 1px solid #e7dcf3;
+  border-radius: 14px;
+  background: #fff;
+  scroll-margin-top: 90px;
+}
+
+.edc-identity-section > h2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 8px;
+  color: #351052;
+  font-size: 17px;
+}
+
+.edc-identity-section > p {
+  color: #756480;
+  font-size: 13px;
+  line-height: 1.6;
+}

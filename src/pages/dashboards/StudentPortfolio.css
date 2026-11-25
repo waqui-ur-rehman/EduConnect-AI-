@@ -1,0 +1,100 @@
+.edc-portfolio-dashboard{display:grid;gap:12px;color:#2b1048}
+.edc-portfolio-hero{position:relative;display:flex;min-height:100px;align-items:center;justify-content:space-between;gap:18px;overflow:hidden;padding:16px 21px;border:1px solid #e6ddfa;border-radius:15px;background:linear-gradient(110deg,#fff 0%,#fbf9ff 52%,#eee7ff 100%);box-shadow:0 5px 16px #3a226f0d}
+.edc-portfolio-hero::after{position:absolute;top:-68px;right:60px;width:180px;height:180px;border-radius:50%;background:#d7c6ff4a;content:""}
+.edc-portfolio-hero>div:first-child{position:relative;z-index:1}
+.edc-portfolio-eyebrow{color:#7956c4;font-size:8px;font-weight:800;letter-spacing:1.2px}
+.edc-portfolio-hero h1{display:flex;align-items:center;gap:8px;margin:4px 0;color:#25154b;font-size:25px;letter-spacing:-.6px}
+.edc-portfolio-hero h1 svg{color:#7132d0}
+.edc-portfolio-hero p{margin:0;color:#615774;font-size:11px}
+.edc-portfolio-hero small{display:block;margin-top:5px;color:#867b99;font-size:9px}
+.edc-portfolio-hero-art{position:relative;z-index:1;display:flex;align-items:center;gap:5px;padding-right:24px;color:#6d31ce}
+.edc-portfolio-hero-art svg:first-child{width:63px;height:63px}
+.edc-portfolio-hero-art svg:nth-child(2){width:43px;height:43px;color:#9c7ce1}
+.edc-portfolio-hero-art svg:last-child{width:32px;height:32px}
+.edc-portfolio-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px}
+.edc-portfolio-stat{display:flex;width:100%;min-width:0;align-items:center;gap:10px;padding:10px 12px;border:1px solid #e1d3f8;border-radius:12px;color:inherit;background:#eee5ff;box-shadow:0 4px 12px #291b5008;font:inherit;text-align:left;cursor:pointer;transition:transform .18s ease,box-shadow .18s ease}
+.edc-portfolio-stat:hover{transform:translateY(-2px);box-shadow:0 7px 16px #291b5014}
+.edc-portfolio-stat:focus-visible{outline:2px solid #b89add;outline-offset:2px}
+.edc-portfolio-stat>span{display:grid;width:38px;height:38px;flex:none;place-items:center;border-radius:10px;color:#8119df;background:#ddceff}
+.edc-portfolio-stat div{display:grid;gap:3px;min-width:0}
+.edc-portfolio-stat small{overflow:hidden;color:#53366e;font-size:9px;font-weight:650;text-overflow:ellipsis;white-space:nowrap}
+.edc-portfolio-stat strong{color:#30104f;font-size:20px;font-weight:800;line-height:1.1}
+.edc-portfolio-stat.blue{border-color:#d6e5ff;background:#e8f2ff}
+.edc-portfolio-stat.blue>span{color:#4f7cef;background:#d6e7ff}
+.edc-portfolio-stat.green{border-color:#d7eedc;background:#e9f7ed}
+.edc-portfolio-stat.green>span{color:#54a832;background:#d9f0dd}
+.edc-portfolio-stat.violet{border-color:#e1d6fb;background:#f0e9ff}
+.edc-portfolio-stat.violet>span{color:#8b22df;background:#e2d6ff}
+.edc-portfolio-dashboard .edc-portfolio-toolbar{display:grid;grid-template-columns:minmax(0,1fr) minmax(150px,.42fr) auto;align-items:center;gap:8px;padding:8px;border:1px solid #e5dcf5;border-radius:12px;background:#fff}
+.edc-portfolio-dashboard .edc-portfolio-tabs{display:flex;min-width:0;gap:4px;margin:0;padding:3px;overflow-x:auto;border:0;border-radius:9px;background:#f8f5fc}
+.edc-portfolio-dashboard .edc-portfolio-tab{display:inline-flex;flex:none;align-items:center;justify-content:center;gap:5px;min-height:31px;padding:6px 9px;border:1px solid transparent;border-radius:7px;background:transparent;color:#5f4b77;font-size:9px;white-space:nowrap}
+.edc-portfolio-dashboard .edc-portfolio-tab:hover{border-color:#e4d7f6}
+.edc-portfolio-dashboard .edc-portfolio-tab-active{border-color:#8b27e9;background:linear-gradient(105deg,#8b26ed,#690bd0);color:#fff;box-shadow:0 3px 8px #7623d333}
+.edc-portfolio-search{display:flex;min-width:0;height:34px;align-items:center;gap:6px;padding:0 9px;border:1px solid #ded2f0;border-radius:8px;color:#7c36d3;background:#fff}
+.edc-portfolio-search input{width:100%;min-width:0;border:0;outline:0;color:#34244f;background:transparent;font:inherit;font-size:9px}
+.edc-portfolio-search input:focus{border-color:transparent;outline:none;box-shadow:none}
+.edc-portfolio-search button{display:grid;flex:none;place-items:center;border:0;background:transparent;color:#73569b;cursor:pointer}
+.edc-portfolio-add,.edc-portfolio-add-inline{display:inline-flex;min-height:34px;align-items:center;justify-content:center;gap:5px;padding:7px 11px;border:0;border-radius:8px;color:#fff;background:linear-gradient(105deg,#8b26ed,#690bd0);font:inherit;font-size:9px;font-weight:750;white-space:nowrap;cursor:pointer}
+.edc-portfolio-message{margin:0;padding:9px 12px;border:1px solid #e5d7fa;border-radius:9px;font-size:10px}
+.edc-portfolio-sections{display:grid;gap:12px}
+.edc-portfolio-section{display:grid;gap:10px;min-width:0;padding:12px;border:1px solid #e5dcf5;border-radius:13px;background:#fff;box-shadow:0 5px 17px #3519630c}
+.edc-portfolio-section>header{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.edc-portfolio-section>header>div{min-width:0}
+.edc-portfolio-section>header h2{display:flex;align-items:center;gap:6px;margin:0;color:#2f1e50;font-size:13px}
+.edc-portfolio-section>header h2 svg{color:#753bd0}
+.edc-portfolio-section>header p{margin:3px 0 0;color:#786e87;font-size:9px}
+.edc-portfolio-section>header>button{display:inline-flex;flex:none;align-items:center;gap:4px;border:0;color:#7134c9;background:transparent;font-size:9px;font-weight:750;cursor:pointer}
+.edc-portfolio-dashboard .edc-portfolio-notice{margin:0;padding:7px 9px;border:1px solid #e5d7fa;border-radius:8px;color:#603da0;background:#f7f2ff;font-size:9px}
+.edc-portfolio-dashboard .edc-portfolio-certificate-grid,.edc-portfolio-dashboard .edc-portfolio-project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0}
+.edc-portfolio-certificate-card{min-width:0;overflow:hidden;border:1px solid #e6dafa;border-radius:11px;background:linear-gradient(135deg,#fff,#faf7ff);box-shadow:0 4px 12px #311b570b}
+.edc-portfolio-certificate-art{display:flex;min-height:78px;flex-direction:column;align-items:center;justify-content:center;gap:4px;margin:7px;border:3px solid #9c76ea;border-radius:8px;background:linear-gradient(140deg,#f9f6ff,#e9e1ff);color:#7132d0}
+.edc-portfolio-certificate-art span{color:#57368a;font-size:8px;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
+.edc-portfolio-certificate-copy{display:grid;gap:5px;padding:2px 9px 9px}
+.edc-portfolio-record-label{color:#7956c4;font-size:7px;font-weight:800;letter-spacing:.5px;text-transform:uppercase}
+.edc-portfolio-certificate-copy h3{display:-webkit-box;overflow:hidden;min-height:28px;margin:0;color:#30204e;font-size:10px;line-height:1.4;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.edc-portfolio-certificate-copy p{display:flex;align-items:center;gap:4px;margin:0;color:#655975;font-size:8px}
+.edc-portfolio-certificate-copy p svg{flex:none;color:#54a832}
+.edc-portfolio-certificate-copy>button{display:inline-flex;min-height:26px;align-items:center;justify-content:center;gap:4px;margin-top:3px;border:1px solid #d9c8f3;border-radius:7px;color:#673bb0;background:#f6f1ff;font-size:8px;font-weight:750;cursor:pointer}
+.edc-portfolio-project-card{display:flex;min-width:0;overflow:hidden;border:1px solid #e6dafa;border-radius:11px;background:linear-gradient(120deg,#fff,#faf7ff);box-shadow:0 4px 12px #311b570b}
+.edc-portfolio-project-art{display:flex;width:90px;min-width:90px;min-height:105px;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#7436c8;background:linear-gradient(145deg,#eee4ff,#e5f1ff)}
+.edc-portfolio-project-art span{max-width:85px;overflow:hidden;color:#543879;font-size:7px;font-weight:750;text-align:center;text-overflow:ellipsis}
+.edc-portfolio-project-copy{display:flex;min-width:0;flex:1;flex-direction:column;align-items:flex-start;gap:5px;padding:8px}
+.edc-portfolio-project-copy h3{display:-webkit-box;overflow:hidden;margin:0;color:#30204e;font-size:10px;line-height:1.35;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.edc-portfolio-project-copy p{display:-webkit-box;overflow:hidden;margin:0;color:#786e87;font-size:8px;line-height:1.4;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.edc-portfolio-project-copy .edc-portfolio-skill-list{gap:4px;margin:1px 0}
+.edc-portfolio-project-copy .edc-portfolio-skill-list span{padding:3px 6px;font-size:7px}
+.edc-portfolio-project-copy>a{overflow:hidden;max-width:100%;font-size:8px;text-overflow:ellipsis;white-space:nowrap}
+.edc-portfolio-project-copy .edc-portfolio-actions{gap:5px;margin-top:auto}
+.edc-portfolio-project-copy .edc-portfolio-actions .edc-btn{min-height:23px;padding:4px 7px;font-size:8px}
+.edc-portfolio-project-copy .edc-icon-btn{width:24px;height:24px}
+.edc-portfolio-dashboard .edc-empty{min-height:105px;gap:5px;padding:12px;border:1px dashed #ddcff0;border-radius:10px;background:#fbf9ff;text-align:center}
+.edc-portfolio-dashboard .edc-empty h3{margin:0;color:#30204e;font-size:10px}
+.edc-portfolio-dashboard .edc-empty p{margin:0;color:#7c738b;font-size:8px}
+.edc-portfolio-skill-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.edc-portfolio-skill-cards article{display:flex;align-items:center;gap:8px;padding:9px;border:1px solid #d7eedc;border-radius:9px;background:#e9f7ed}
+.edc-portfolio-skill-cards article>span{display:grid;width:31px;height:31px;flex:none;place-items:center;border-radius:8px;color:#54a832;background:#d9f0dd}
+.edc-portfolio-skill-cards article>div{display:grid;gap:3px;min-width:0}
+.edc-portfolio-skill-cards strong{overflow:hidden;color:#315d3b;font-size:9px;text-overflow:ellipsis;white-space:nowrap}
+.edc-portfolio-skill-cards small{color:#6b816e;font-size:8px}
+.edc-portfolio-dashboard .edc-portfolio-achievements{grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0}
+.edc-portfolio-dashboard .edc-portfolio-achievements article{gap:6px;padding:11px;border-color:#e1d3f8;border-radius:10px;background:#f8f4ff;color:#7a43c6}
+.edc-portfolio-dashboard .edc-portfolio-achievements article.earned{border-color:#d7eedc;background:#e9f7ed;color:#54a832}
+.edc-portfolio-dashboard .edc-portfolio-achievements strong{font-size:9px}
+.edc-portfolio-dashboard .edc-portfolio-achievements span,.edc-portfolio-dashboard .edc-portfolio-achievements small{color:#786e87;font-size:8px}
+.edc-portfolio-subheading{margin:8px 0 0;color:#35224f;font-size:11px}
+.edc-portfolio-passed-quizzes{display:grid;gap:6px}
+.edc-portfolio-passed-quizzes article{display:flex;align-items:center;gap:8px;padding:8px;border:1px solid #d7eedc;border-radius:8px;background:#f1faf3;color:#4b9d36}
+.edc-portfolio-passed-quizzes article>div{display:grid;flex:1;gap:2px;min-width:0}
+.edc-portfolio-passed-quizzes article>div strong{overflow:hidden;color:#345a37;font-size:9px;text-overflow:ellipsis;white-space:nowrap}
+.edc-portfolio-passed-quizzes small{color:#708174;font-size:8px}
+.edc-portfolio-passed-quizzes article>strong{font-size:10px}
+.edc-portfolio-dashboard .edc-portfolio-showcase-hero{border-color:#e1d3f8;border-radius:12px;background:linear-gradient(110deg,#f3ecff,#eef5ff);color:#7037c3}
+.edc-portfolio-dashboard .edc-portfolio-showcase-hero h3{color:#30204e}
+.edc-portfolio-dashboard .edc-portfolio-showcase-hero p{color:#786e87}
+.edc-portfolio-dashboard .edc-portfolio-add-inline{margin-bottom:4px}
+.edc-portfolio-dashboard .edc-portfolio-form{margin:0}
+.edc-portfolio-dashboard .edc-portfolio-section .edc-portfolio-name-field{margin:0}
+.edc-portfolio-dashboard button:focus-visible,.edc-portfolio-dashboard input:focus-visible{outline:2px solid #b89add;outline-offset:2px}
+@media(max-width:1000px){.edc-portfolio-dashboard .edc-portfolio-certificate-grid,.edc-portfolio-dashboard .edc-portfolio-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.edc-portfolio-dashboard .edc-portfolio-toolbar{grid-template-columns:minmax(0,1fr) minmax(140px,.45fr)}.edc-portfolio-dashboard .edc-portfolio-tabs{grid-column:1/-1;grid-row:1}.edc-portfolio-dashboard .edc-portfolio-achievements{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:650px){.edc-portfolio-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.edc-portfolio-dashboard .edc-portfolio-toolbar{grid-template-columns:minmax(0,1fr)}.edc-portfolio-dashboard .edc-portfolio-tabs,.edc-portfolio-search,.edc-portfolio-add{grid-column:1}.edc-portfolio-dashboard .edc-portfolio-tabs{grid-row:auto}.edc-portfolio-search{width:100%}.edc-portfolio-add{justify-self:stretch}.edc-portfolio-dashboard .edc-portfolio-certificate-grid,.edc-portfolio-dashboard .edc-portfolio-project-grid,.edc-portfolio-skill-cards{grid-template-columns:minmax(0,1fr)}.edc-portfolio-dashboard .edc-portfolio-achievements{grid-template-columns:repeat(2,minmax(0,1fr))}.edc-portfolio-hero-art{opacity:.3}}
+@media(max-width:430px){.edc-portfolio-hero{padding:13px}.edc-portfolio-hero h1{font-size:20px}.edc-portfolio-hero-art{position:absolute;right:0;padding-right:5px}.edc-portfolio-hero-art svg:first-child{width:42px}.edc-portfolio-hero-art svg:nth-child(2){width:31px}.edc-portfolio-hero-art svg:last-child{width:24px}.edc-portfolio-stat{gap:7px;padding:8px}.edc-portfolio-stat>span{width:32px;height:32px}.edc-portfolio-stat strong{font-size:17px}.edc-portfolio-section{padding:9px}}

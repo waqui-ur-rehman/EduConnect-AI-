@@ -1,0 +1,1063 @@
+.edc-review-board {
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+  color: #20243b;
+}
+
+.edc-review-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 28px;
+  padding: 24px 26px;
+  border: 1px solid #e6e8f1;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #fff 0%, #fbfaff 100%);
+  box-shadow: 0 8px 24px rgba(31, 37, 67, .045);
+}
+
+.edc-review-summary-copy h3,
+.edc-review-form-heading h3 {
+  margin: 5px 0 0;
+  color: #20243b;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.25px;
+}
+
+.edc-review-summary-copy p {
+  margin: 6px 0 0;
+  color: #747b90;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.edc-review-overline {
+  color: #7955c4;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.25px;
+}
+
+.edc-review-rating-summary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 24px;
+  border-left: 1px solid #e8e8f0;
+}
+
+.edc-review-rating-summary > strong {
+  color: #20243b;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.edc-review-rating-summary > div {
+  display: grid;
+  gap: 4px;
+}
+
+.edc-review-stars,
+.edc-review-card-rating > span {
+  color: #f5aa27;
+  letter-spacing: 1.5px;
+}
+
+.edc-review-rating-summary small {
+  color: #82899b;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.edc-review-leave-button,
+.edc-review-submit,
+.edc-review-empty-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  border: 1px solid #6940cd;
+  border-radius: 10px;
+  background: #7042d8;
+  color: #fff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 750;
+  cursor: pointer;
+  transition: background .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.edc-review-leave-button:hover,
+.edc-review-submit:hover,
+.edc-review-empty-action:hover {
+  background: #5e34c0;
+  box-shadow: 0 7px 16px rgba(91, 53, 151, .18);
+  transform: translateY(-1px);
+}
+
+.edc-review-form {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid #e6e8f1;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 7px 22px rgba(31, 37, 67, .04);
+}
+
+.edc-review-form-heading,
+.edc-review-form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.edc-review-form-heading h3 {
+  font-size: 17px;
+}
+
+.edc-review-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.edc-review-form-grid label {
+  display: grid;
+  gap: 7px;
+  color: #454b61;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.edc-review-form-grid select,
+.edc-review-form-grid textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 12px;
+  border: 1px solid #dfe3ed;
+  border-radius: 9px;
+  background: #fff;
+  color: #252a40;
+  font: inherit;
+  font-size: 13px;
+}
+
+.edc-review-form-grid select:focus,
+.edc-review-form-grid textarea:focus {
+  border-color: #a88ae5;
+  outline: 3px solid rgba(112, 66, 216, .12);
+}
+
+.edc-review-comment-field {
+  grid-column: 1 / -1;
+}
+
+.edc-review-form-grid textarea {
+  min-height: 112px;
+  resize: vertical;
+}
+
+.edc-review-form-footer p {
+  margin: 0;
+  color: #536b48;
+  font-size: 12px;
+}
+
+.edc-review-delete {
+  padding: 8px 11px;
+  border: 1px solid #f2d8dd;
+  border-radius: 8px;
+  background: #fff8f8;
+  color: #b43c50;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.edc-review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.edc-review-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 190px;
+  padding: 17px 18px 14px;
+  border: 1px solid #e6e8f1;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 4px 13px rgba(31, 37, 67, .035);
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.edc-review-card:hover {
+  border-color: #d8c9f4;
+  box-shadow: 0 10px 22px rgba(45, 37, 78, .075);
+  transform: translateY(-2px);
+}
+
+.edc-review-card.is-yours {
+  border-color: #dfd4f5;
+}
+
+.edc-review-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.edc-review-avatar {
+  display: grid;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid #e4dcf4;
+  border-radius: 50%;
+  background: #f5f0ff;
+  color: #6640b8;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.edc-review-person {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.edc-review-person strong {
+  overflow: hidden;
+  color: #30364d;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.edc-review-person span {
+  overflow: hidden;
+  color: #83899b;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edc-review-card-top time {
+  flex: 0 0 auto;
+  margin-left: auto;
+  color: #969bad;
+  font-size: 10px;
+}
+
+.edc-review-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.edc-review-card-rating > span {
+  font-size: 13px;
+  line-height: 1;
+}
+
+.edc-review-muted-stars {
+  color: #e1e4eb;
+}
+
+.edc-review-card-rating small {
+  color: #7d8498;
+  font-size: 10px;
+}
+
+.edc-review-comment {
+  margin: 11px 0 15px;
+  color: #4e566c;
+  font-size: 12px;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.edc-review-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding-top: 9px;
+  border-top: 1px solid #f0f1f5;
+}
+
+.edc-review-empty {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 34px 22px;
+  border: 1px dashed #dfe2ed;
+  border-radius: 16px;
+  background: #fbfcff;
+  text-align: center;
+}
+
+.edc-review-empty-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 13px;
+  background: #f2ecff;
+  color: #7042d8;
+  font-size: 20px;
+}
+
+.edc-review-empty h3 {
+  margin: 5px 0 0;
+  color: #30364d;
+  font-size: 15px;
+}
+
+.edc-review-empty p {
+  max-width: 420px;
+  margin: 0;
+  color: #7c8498;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.edc-review-empty-action {
+  margin-top: 8px;
+}
+
+.edc-review-demo-note {
+  margin: 0;
+  color: #969bad;
+  font-size: 11px;
+  text-align: right;
+}
+
+.edc-teacher-review-dashboard {
+  display: grid;
+  gap: 16px;
+  min-width: 0;
+  color: #2b1247;
+}
+
+.edc-teacher-review-heading h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #2b1049;
+  font-size: 27px;
+  font-weight: 850;
+  letter-spacing: -.5px;
+}
+
+.edc-teacher-review-heading h1 svg {
+  color: #510b87;
+}
+
+.edc-teacher-review-heading p {
+  margin: 6px 0 0;
+  color: #503c68;
+  font-size: 13px;
+}
+
+.edc-teacher-review-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.edc-teacher-review-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 82px;
+  padding: 14px;
+  border: 0;
+  border-radius: 15px;
+  color: #fff;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 5px 13px #32104f16;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.edc-teacher-review-stat:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 17px #32104f25;
+}
+
+.edc-teacher-review-stat:focus-visible {
+  outline: 3px solid #210040;
+  outline-offset: 3px;
+}
+
+.edc-teacher-review-stat.purple {
+  background: linear-gradient(120deg, #7406bd, #390075);
+}
+
+.edc-teacher-review-stat.gold {
+  background: linear-gradient(120deg, #ffbb00, #df9200);
+}
+
+.edc-teacher-review-stat > span {
+  display: grid;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border-radius: 50%;
+  background: #ffffff28;
+}
+
+.edc-teacher-review-stat > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.edc-teacher-review-stat small {
+  color: #ffffffdf;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.edc-teacher-review-stat strong {
+  color: white;
+  font-size: 24px;
+  font-weight: 850;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.edc-teacher-review-stat em {
+  margin-left: 5px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 650;
+}
+
+.edc-teacher-review-insights {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 15px;
+}
+
+.edc-teacher-review-distribution,
+.edc-teacher-review-trend {
+  min-width: 0;
+  padding: 15px 17px;
+  border: 1px solid #e8def2;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 12px #32104f0b;
+}
+
+.edc-teacher-review-distribution h2,
+.edc-teacher-review-section-heading h2 {
+  margin: 0;
+  color: #32104f;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.edc-teacher-review-distribution-content {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 15px;
+  min-height: 135px;
+  margin-top: 10px;
+}
+
+.edc-teacher-review-average {
+  display: grid;
+  justify-items: center;
+  gap: 6px;
+  padding-right: 14px;
+  border-right: 1px solid #e8def2;
+}
+
+.edc-teacher-review-average > strong {
+  color: #32104f;
+  font-size: 35px;
+  font-weight: 850;
+  line-height: 1;
+}
+
+.edc-teacher-review-average > strong small {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.edc-teacher-review-average > div {
+  display: flex;
+  gap: 2px;
+  color: #f0a900;
+}
+
+.edc-teacher-review-average > span {
+  color: #503c68;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.edc-teacher-review-rating-bars {
+  display: grid;
+  gap: 8px;
+}
+
+.edc-teacher-review-rating-row {
+  display: grid;
+  grid-template-columns: 31px minmax(0, 1fr) 70px;
+  align-items: center;
+  gap: 8px;
+}
+
+.edc-teacher-review-rating-row > strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #59446e;
+  font-size: 11px;
+}
+
+.edc-teacher-review-rating-row > strong svg {
+  color: #f0a900;
+}
+
+.edc-teacher-review-rating-track {
+  height: 10px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #eee6f8;
+}
+
+.edc-teacher-review-rating-track > span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #9734df, #5c0ca4);
+}
+
+.edc-teacher-review-rating-row > small {
+  color: #4a315e;
+  font-size: 10px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.edc-teacher-review-rating-row > small span {
+  color: #81748e;
+}
+
+.edc-teacher-review-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.edc-teacher-review-section-heading > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 9px;
+  border: 1px solid #e8def2;
+  border-radius: 8px;
+  color: #553275;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.edc-teacher-review-chart {
+  display: block;
+  width: 100%;
+  min-height: 140px;
+  margin-top: 8px;
+  overflow: visible;
+}
+
+.edc-teacher-review-chart line {
+  stroke: #ece5f4;
+  stroke-width: 1;
+}
+
+.edc-teacher-review-chart text {
+  fill: #71617f;
+  font-size: 10px;
+  text-anchor: end;
+}
+
+.edc-teacher-review-chart .edc-teacher-review-chart-month {
+  text-anchor: middle;
+}
+
+.edc-teacher-review-chart-area {
+  fill: #7d27c522;
+}
+
+.edc-teacher-review-chart-line {
+  fill: none;
+  stroke: #6507ad;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
+.edc-teacher-review-chart circle {
+  fill: #6507ad;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.edc-teacher-review-chart-empty {
+  display: grid;
+  min-height: 140px;
+  margin: 8px 0 0;
+  place-items: center;
+  color: #7c6d89;
+  font-size: 12px;
+  text-align: center;
+}
+
+.edc-teacher-review-filterbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.edc-teacher-review-selects {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 8px;
+}
+
+.edc-teacher-review-selects select {
+  width: 137px;
+  min-width: 0;
+  height: 38px;
+  padding: 0 9px;
+  border: 1px solid #e3d7ef;
+  border-radius: 10px;
+  background: #fff;
+  color: #3d2853;
+  font: inherit;
+  font-size: 11px;
+}
+
+.edc-teacher-review-filters {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 8px;
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.edc-teacher-review-filters button {
+  flex: none;
+  min-height: 36px;
+  padding: 8px 13px;
+  border: 1px solid #e8def2;
+  border-radius: 99px;
+  background: #fff;
+  color: #3d2853;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.edc-teacher-review-filters button.active {
+  border-color: #6507ad;
+  background: linear-gradient(110deg, #8b19d2, #5c009e);
+  color: white;
+}
+
+.edc-teacher-review-search {
+  display: flex;
+  flex: 0 0 235px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  height: 38px;
+  padding: 0 10px;
+  border: 1px solid #e3d7ef;
+  border-radius: 10px;
+  background: #fff;
+  color: #684887;
+}
+
+.edc-teacher-review-search input {
+  width: 100%;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #2b1247;
+  font: inherit;
+  font-size: 11px;
+}
+
+.edc-teacher-review-list {
+  display: grid;
+  gap: 9px;
+}
+
+.edc-teacher-review-card {
+  display: grid;
+  grid-template-columns: minmax(145px, .7fr) minmax(240px, 1.35fr) minmax(180px, .9fr) auto;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+  padding: 13px 15px;
+  border: 1px solid #e8def2;
+  border-radius: 14px;
+  background: linear-gradient(110deg, #fff, #fcfaff);
+  box-shadow: 0 4px 11px #32104f0b;
+}
+
+.edc-teacher-review-person {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.edc-teacher-review-avatar {
+  display: grid;
+  flex: 0 0 43px;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid #e7d9f4;
+  border-radius: 50%;
+  background: #f0e5fb;
+  color: #5d288c;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.edc-teacher-review-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.edc-teacher-review-person > div,
+.edc-teacher-review-course > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.edc-teacher-review-person strong,
+.edc-teacher-review-course strong {
+  overflow: hidden;
+  color: #2f1747;
+  font-size: 12px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.edc-teacher-review-person time {
+  color: #806b91;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.edc-teacher-review-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.edc-teacher-review-card-rating > span {
+  display: inline-flex;
+  gap: 1px;
+  color: #f0a900;
+}
+
+.edc-teacher-review-card-rating > strong {
+  color: #39214f;
+  font-size: 12px;
+}
+
+.edc-teacher-review-comment {
+  min-width: 0;
+}
+
+.edc-teacher-review-comment p {
+  margin: 5px 0 0;
+  color: #443750;
+  font-size: 11px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.edc-teacher-review-course {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+}
+
+.edc-teacher-review-course-image {
+  display: grid;
+  flex: 0 0 62px;
+  width: 62px;
+  height: 40px;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #f1e8fb;
+  color: #6426a5;
+}
+
+.edc-teacher-review-course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.edc-teacher-review-course span:last-child {
+  color: #72598a;
+  font-size: 10px;
+}
+
+.edc-teacher-review-report {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edc-teacher-review-report .edc-report-trigger {
+  padding: 7px 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.edc-teacher-review-empty {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 30px 18px;
+  border: 1px dashed #ded1ea;
+  border-radius: 14px;
+  background: #fff;
+  color: #6b4388;
+  text-align: center;
+}
+
+.edc-teacher-review-empty strong {
+  color: #32104f;
+  font-size: 14px;
+}
+
+.edc-teacher-review-empty p {
+  margin: 0;
+  color: #796a88;
+  font-size: 12px;
+}
+
+.edc-teacher-review-pagination,
+.edc-teacher-review-pagination > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.edc-teacher-review-pagination {
+  color: #715d81;
+  font-size: 11px;
+}
+
+.edc-teacher-review-pagination > div button {
+  padding: 7px 10px;
+  border: 1px solid #e3d7ef;
+  border-radius: 8px;
+  background: white;
+  color: #4f2c6e;
+  font: inherit;
+  cursor: pointer;
+}
+
+.edc-teacher-review-pagination > div button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+.edc-review-board button:focus-visible {
+  outline: 3px solid rgba(112, 66, 216, .22);
+  outline-offset: 2px;
+}
+
+@media (max-width: 1100px) {
+  .edc-teacher-review-card {
+    grid-template-columns: minmax(130px, .7fr) minmax(220px, 1.3fr) minmax(160px, .8fr);
+  }
+
+  .edc-teacher-review-report {
+    grid-column: 3;
+  }
+
+  .edc-teacher-review-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .edc-teacher-review-filterbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .edc-teacher-review-selects select {
+    flex: 1 1 0;
+    width: auto;
+  }
+
+  .edc-teacher-review-search {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .edc-teacher-review-insights {
+    grid-template-columns: 1fr;
+  }
+
+  .edc-teacher-review-card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .edc-teacher-review-report {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 560px) {
+  .edc-teacher-review-heading h1 {
+    font-size: 22px;
+  }
+
+  .edc-teacher-review-stats {
+    gap: 9px;
+  }
+
+  .edc-teacher-review-selects {
+    flex-direction: column;
+  }
+
+  .edc-teacher-review-selects select {
+    flex-basis: 38px;
+  }
+
+  .edc-teacher-review-stat {
+    gap: 8px;
+    min-height: 74px;
+    padding: 10px;
+  }
+
+  .edc-teacher-review-stat > span {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .edc-teacher-review-stat small {
+    font-size: 10px;
+  }
+
+  .edc-teacher-review-stat strong {
+    font-size: 20px;
+  }
+
+  .edc-teacher-review-distribution-content {
+    grid-template-columns: 1fr;
+  }
+
+  .edc-teacher-review-average {
+    padding: 0 0 12px;
+    border-right: 0;
+    border-bottom: 1px solid #e8def2;
+  }
+
+  .edc-teacher-review-card {
+    grid-template-columns: 1fr;
+  }
+
+  .edc-teacher-review-report {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 760px) {
+  .edc-review-summary {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .edc-review-leave-button {
+    grid-column: 1 / -1;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .edc-review-grid,
+  .edc-review-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edc-review-comment-field {
+    grid-column: auto;
+  }
+
+  .edc-review-summary {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 15px;
+    padding: 17px;
+  }
+
+  .edc-review-rating-summary {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .edc-review-leave-button {
+    grid-column: auto;
+  }
+
+  .edc-review-form {
+    padding: 17px;
+  }
+
+  .edc-review-card-top time {
+    font-size: 9px;
+  }
+}

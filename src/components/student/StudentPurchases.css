@@ -1,0 +1,85 @@
+.edc-purchases-page { gap: 14px; color: #281c4b; }
+.edc-purchases-hero { position:relative; display:flex; min-height:98px; align-items:center; justify-content:space-between; gap:18px; overflow:hidden; padding:16px 21px; border:1px solid #e6ddfa; border-radius:15px; background:linear-gradient(110deg,#fff 0%,#fbf9ff 52%,#eee7ff 100%); box-shadow:0 5px 16px #3a226f0d; }
+.edc-purchases-hero::after { position:absolute; top:-74px; right:47px; width:185px; height:185px; border-radius:50%; background:#d7c6ff4a; content:""; }
+.edc-purchases-hero>div:first-child { position:relative; z-index:1; }
+.edc-purchases-eyebrow { color:#7956c4; font-size:8px; font-weight:800; letter-spacing:1.2px; }
+.edc-purchases-hero h1 { display:flex; align-items:center; gap:8px; margin:4px 0; color:#25154b; font-size:25px; letter-spacing:-.6px; }
+.edc-purchases-hero h1 svg { color:#7132d0; }
+.edc-purchases-hero p { margin:0; color:#615774; font-size:11px; }
+.edc-purchases-hero small { display:block; margin-top:5px; color:#867b99; font-size:9px; }
+.edc-purchases-hero-art { position:relative; z-index:1; display:flex; align-items:center; gap:5px; padding-right:22px; color:#6d31ce; }
+.edc-purchases-hero-art svg:last-child { color:#9c7ce1; }
+.edc-purchases-stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:9px; }
+.edc-purchases-stat { display:flex; width:100%; min-width:0; align-items:center; gap:10px; padding:10px 12px; border:1px solid #e1d3f8; border-radius:12px; color:inherit; background:#eee5ff; box-shadow:0 4px 12px #291b5008; font:inherit; text-align:left; cursor:pointer; transition:transform .18s ease,box-shadow .18s ease; }
+.edc-purchases-stat:hover { transform:translateY(-2px); box-shadow:0 7px 16px #291b5014; }
+.edc-purchases-stat:focus-visible { outline:2px solid #b89add; outline-offset:2px; }
+.edc-purchases-stat>span { display:grid; width:38px; height:38px; flex:none; place-items:center; border-radius:10px; color:#8119df; background:#ddceff; }
+.edc-purchases-stat div { display:grid; gap:3px; min-width:0; }
+.edc-purchases-stat small { overflow:hidden; color:#53366e; font-size:9px; font-weight:650; text-overflow:ellipsis; white-space:nowrap; }
+.edc-purchases-stat strong { color:#30104f; font-size:20px; font-weight:800; line-height:1.1; }
+.edc-purchases-stat.blue { border-color:#d6e5ff; background:#e8f2ff; }
+.edc-purchases-stat.blue>span { color:#4f7cef; background:#d6e7ff; }
+.edc-purchases-stat.green { border-color:#d7eedc; background:#e9f7ed; }
+.edc-purchases-stat.green>span { color:#54a832; background:#d9f0dd; }
+.edc-purchases-stat.violet { border-color:#e1d6fb; background:#f0e9ff; }
+.edc-purchases-stat.violet>span { color:#8b22df; background:#e2d6ff; }
+.edc-purchases-notice { margin:0; padding:9px 12px; border:1px solid #e5d7fa; border-radius:9px; color:#603da0; background:#f7f2ff; font-size:11px; }
+.edc-purchases-records { overflow:hidden; border:1px solid #e5dcf5; border-radius:14px; background:#fff; box-shadow:0 5px 17px #3519630c; }
+.edc-purchases-toolbar { display:flex; align-items:center; justify-content:space-between; gap:9px; padding:10px; border-bottom:1px solid #eee8f8; background:#fcfaff; }
+.edc-purchases-tabs { display:flex; min-width:0; gap:4px; overflow-x:auto; }
+.edc-purchases-tabs button { display:inline-flex; flex:none; align-items:center; gap:5px; padding:7px 9px; border:1px solid transparent; border-radius:8px; color:#5f4b77; background:#f5f0ff; font-size:9px; font-weight:700; white-space:nowrap; cursor:pointer; }
+.edc-purchases-tabs button.active { border-color:#8b27e9; color:#fff; background:linear-gradient(105deg,#8b26ed,#690bd0); box-shadow:0 3px 8px #7623d333; }
+.edc-purchases-tabs button span { opacity:.82; }
+.edc-purchases-search { display:flex; min-width:120px; max-width:190px; height:34px; align-items:center; gap:6px; padding:0 9px; border:1px solid #ded2f0; border-radius:8px; color:#7c36d3; background:#fff; }
+.edc-purchases-sort:focus-within { outline:2px solid #c8b3ed; outline-offset:1px; }
+.edc-purchases-search input { width:100%; min-width:0; border:0; outline:0; color:#34244f; background:transparent; font-size:9px; }
+.edc-tab-content .edc-purchases-search input:focus { border-color:transparent; outline:none; box-shadow:none; }
+.edc-purchases-sort { display:flex; height:34px; align-items:center; gap:4px; padding:0 7px; border:1px solid #ded2f0; border-radius:8px; color:#55446e; background:#fff; font-size:9px; }
+.edc-purchases-sort select { max-width:75px; border:0; outline:0; color:#38274f; background:transparent; font:inherit; font-weight:700; }
+.edc-purchases-sort svg { pointer-events:none; }
+.edc-purchases-table-wrap { overflow-x:auto; }
+.edc-purchases-table-head,.edc-purchase-row { display:grid; grid-template-columns:minmax(210px,2fr) minmax(75px,.65fr) minmax(100px,.9fr) minmax(80px,.65fr) minmax(110px,.9fr) minmax(125px,1fr); align-items:center; gap:9px; min-width:770px; }
+.edc-purchases-table-head { min-height:31px; padding:0 13px; color:#4b3766; background:#f4efff; font-size:9px; font-weight:800; }
+.edc-purchase-row { min-height:54px; padding:6px 13px; border-bottom:1px solid #eeeaf5; color:#2f214d; }
+.edc-purchase-row:last-child { border-bottom:0; }
+.edc-purchase-item-cell { display:flex; min-width:0; align-items:center; gap:9px; }
+.edc-purchase-item-cell>div:last-child { display:grid; gap:3px; min-width:0; }
+.edc-purchase-item-cell strong { overflow:hidden; color:#2f214d; font-size:10px; text-overflow:ellipsis; white-space:nowrap; }
+.edc-purchase-item-cell small { overflow:hidden; color:#766c87; font-size:8px; text-overflow:ellipsis; white-space:nowrap; }
+.edc-purchase-art { display:grid; width:51px; height:42px; flex:none; place-items:center; overflow:hidden; border-radius:8px; color:#1e9ab3; background:linear-gradient(135deg,#dff5ff,#eee7ff); }
+.edc-purchase-art img { width:100%; height:100%; object-fit:cover; }
+.edc-purchase-art.ebook { color:#328d68; background:linear-gradient(135deg,#e3f7ea,#e8f1ff); }
+.edc-purchase-art.certificate { color:#7134c7; background:#f0e9ff; }
+.edc-purchase-type { width:max-content; max-width:100%; overflow:hidden; padding:4px 7px; border-radius:6px; color:#5c2da9; background:#eee2ff; font-size:8px; font-weight:750; text-overflow:ellipsis; white-space:nowrap; }
+.edc-purchase-type.book { color:#28704f; background:#e5f5e9; }
+.edc-purchase-type.certificate { color:#6537aa; background:#f0e9ff; }
+.edc-purchase-date { display:flex; align-items:center; gap:5px; color:#554b68; font-size:8px; white-space:nowrap; }
+.edc-purchase-date svg { flex:none; color:#7040c6; }
+.edc-purchase-price { color:#2d1a54; font-size:10px; white-space:nowrap; }
+.edc-purchase-status { display:inline-flex; width:max-content; max-width:100%; align-items:center; gap:5px; overflow:hidden; padding:5px 7px; border-radius:7px; font-size:8px; font-weight:750; text-overflow:ellipsis; white-space:nowrap; }
+.edc-purchase-status.complete { color:#317c29; background:#e5f6df; }
+.edc-purchase-status.progress { color:#5c32a4; background:#f1eaff; }
+.edc-purchase-progress-dot { width:9px; height:9px; flex:none; border:2px solid currentColor; border-radius:50%; }
+.edc-purchase-actions { display:flex; flex-wrap:wrap; gap:5px; }
+.edc-purchase-actions button { display:inline-flex; align-items:center; gap:4px; padding:6px 8px; border:0; border-radius:7px; color:#fff; background:linear-gradient(105deg,#8a31e8,#650acb); font-size:8px; font-weight:750; white-space:nowrap; cursor:pointer; }
+.edc-purchase-actions button.receipt { border:1px solid #d9c8f3; color:#673bb0; background:#f6f1ff; }
+.edc-purchase-unavailable { color:#8c8299; font-size:8px; }
+.edc-purchases-empty { display:grid; min-height:185px; justify-items:center; align-content:center; padding:20px; text-align:center; }
+.edc-purchases-empty>span { display:grid; width:44px; height:44px; place-items:center; border-radius:12px; color:#753ec7; background:#f0e9ff; }
+.edc-purchases-empty h2 { margin:9px 0 4px; color:#30204e; font-size:13px; }
+.edc-purchases-empty p { max-width:410px; margin:0; color:#7c738b; font-size:9px; line-height:1.55; }
+.edc-purchases-empty button { margin-top:10px; padding:7px 10px; border:0; border-radius:7px; color:#fff; background:#7132ca; font-size:9px; font-weight:700; cursor:pointer; }
+.edc-recent-purchases { display:grid; gap:9px; padding:12px; border:1px solid #e5dcf5; border-radius:13px; background:#fff; box-shadow:0 5px 16px #3519630a; }
+.edc-recent-purchases>header { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.edc-recent-purchases>header h2 { display:flex; align-items:center; gap:6px; margin:3px 0 0; color:#2f1e50; font-size:13px; }
+.edc-recent-purchases>header h2 svg { color:#753bd0; }
+.edc-recent-purchases>header>button { border:0; color:#7134c9; background:transparent; font-size:9px; font-weight:750; cursor:pointer; }
+.edc-recent-purchases>div { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; }
+.edc-recent-purchases article { display:flex; min-width:0; align-items:center; gap:8px; padding:7px; border:1px solid #e8e1f4; border-radius:9px; background:linear-gradient(120deg,#fff,#faf7ff); }
+.edc-recent-purchases .edc-purchase-art { width:48px; height:44px; }
+.edc-recent-purchases article>div:last-child { display:grid; gap:3px; min-width:0; }
+.edc-recent-purchases article strong { overflow:hidden; color:#35234f; font-size:9px; text-overflow:ellipsis; white-space:nowrap; }
+.edc-recent-purchases article small,.edc-recent-purchases article span { overflow:hidden; color:#786e87; font-size:8px; text-overflow:ellipsis; white-space:nowrap; }
+@media(max-width:980px) { .edc-purchases-toolbar { flex-wrap:wrap; }.edc-purchases-tabs { flex:1 1 100%; }.edc-purchases-search { max-width:none; flex:1 1 200px; } }
+@media(max-width:620px) { .edc-purchases-hero { padding:13px; }.edc-purchases-hero h1 { font-size:21px; }.edc-purchases-hero-art { opacity:.28; }.edc-purchases-stats { grid-template-columns:repeat(2,minmax(0,1fr)); }.edc-purchases-stat { padding:9px; }.edc-purchases-stat>span { width:32px; height:32px; }.edc-recent-purchases>div { grid-template-columns:1fr; } }
+@media(max-width:430px) { .edc-purchases-hero-art { position:absolute; right:0; }.edc-purchases-hero-art svg:first-child { width:47px; }.edc-purchases-hero-art svg:last-child { width:34px; }.edc-purchases-sort { flex:1; justify-content:center; }.edc-purchases-search { flex-basis:100%; } }

@@ -1,0 +1,14 @@
+import { Router } from "express";
+import { protect, authorize } from "../middleware/authMiddleware.js";
+import { teacherList, teacherSave, teacherPublish, teacherDelete, studentList, studentStart, studentSubmit } from "../controllers/quizController.js";
+const router = Router();
+router.use(protect);
+router.get("/courses/:courseId/teacher", authorize("teacher"), teacherList);
+router.post("/courses/:courseId/teacher", authorize("teacher"), teacherSave);
+router.put("/courses/:courseId/teacher/:quizId", authorize("teacher"), teacherSave);
+router.patch("/courses/:courseId/teacher/:quizId/publish", authorize("teacher"), teacherPublish);
+router.delete("/courses/:courseId/teacher/:quizId", authorize("teacher"), teacherDelete);
+router.get("/courses/:courseId/student", authorize("student"), studentList);
+router.post("/courses/:courseId/student/:quizId/start", authorize("student"), studentStart);
+router.post("/courses/:courseId/student/:quizId/attempts", authorize("student"), studentSubmit);
+export default router;

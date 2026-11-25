@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="120" viewBox="0 0 300 120" fill="none">
+<defs><linearGradient id="chat" x1="45" y1="8" x2="116" y2="81"><stop stop-color="#7A74FF"/><stop offset="1" stop-color="#5740E8"/></linearGradient><linearGradient id="reply" x1="94" y1="53" x2="159" y2="105"><stop stop-color="#BE66FF"/><stop offset="1" stop-color="#8520E6"/></linearGradient><linearGradient id="cap" x1="172" y1="9" x2="267" y2="65"><stop stop-color="#7A59CE"/><stop offset="1" stop-color="#352066"/></linearGradient></defs>
+<path d="M0 119c25-25 37-51 77-49 40 2 34-40 89-43 46-2 62 17 91 15 37-2 42 38 43 77Z" fill="#EAE0FF"/>
+<path d="M56 25a11 11 0 0 1 11-11h28a11 11 0 0 1 11 11v23a11 11 0 0 1-11 11h-7l-8 10-3-10H67a11 11 0 0 1-11-11Z" fill="url(#chat)"/>
+<path d="M75 31a7 7 0 1 1 11 6c-3 2-5 3-5 6" stroke="#fff" stroke-width="4" stroke-linecap="round"/><circle cx="81" cy="50" r="2.1" fill="#fff"/>
+<path d="M99 61a10 10 0 0 1 10-10h35a10 10 0 0 1 10 10v19a10 10 0 0 1-10 10h-6v9l-13-9h-16a10 10 0 0 1-10-10Z" fill="url(#reply)"/>
+<path d="M110 65h5m8 0h19m-32 11h20" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+<rect x="174" y="99" width="96" height="17" rx="5" fill="#6D43BD"/><path d="M181 102h84v11h-84z" fill="#EEE8FE"/>
+<rect x="169" y="83" width="94" height="15" rx="4" fill="#9CC57D"/><path d="M176 86h81v9h-81z" fill="#FFF9DC"/>
+<path d="M180 43h63v26c-18 12-41 12-63 0Z" fill="#452868"/><path d="m160 35 53-18 64 22-55 19Z" fill="url(#cap)"/>
+<path d="m165 36 57 18 50-15" stroke="#A582E2" stroke-width="1.8"/><path d="m220 36 37 13v31" stroke="#F5BC34" stroke-width="2.2"/><circle cx="257" cy="81" r="3" fill="#FCD167"/><path d="m257 82-5 11h10z" fill="#F0B13F"/>
+</svg>
